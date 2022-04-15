@@ -83,6 +83,26 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/commonlyused/enum_/PinType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/commonlyused/enum_/Pizza.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/commonlyused/enum_/PizzaStatus.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/commonlyused/enum_/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/datastructure/myarraylist/MyArrayList.java">
           <value>
             <set />
@@ -109,6 +129,21 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/javaguide/hash/ConsistentHashingWithoutVirtualNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/algorithm/hash/ConsistentHashingWithoutVirtualNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/designpattern/ChainOfResponsibility20/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/javaguide/bigdecimal/BigDecimalTest.java">
           <value>
             <set />
           </value>

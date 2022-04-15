@@ -2,7 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/linzlb/algorithm/sort/Demo.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/linzlb/juan/algorithm/sort/Demo.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/seehope/training/day1/NiuNiu.java" charset="GBK" />
     <file url="file://$PROJECT_DIR$/src/test/java/com/seehope/training/day2/SortDemo.java" charset="GBK" />
