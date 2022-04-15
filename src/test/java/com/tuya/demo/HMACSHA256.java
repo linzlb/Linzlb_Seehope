@@ -1,16 +1,6 @@
-package com.tuya.demo; /**
- *
- * Copyright (c) 2021 Tuya
- *
- * This file is part of Tuya IoT Core
- *
- * Please ensure that you will not distribute , modify the the source code and not develop
- * any derivative products through the source code . Please ensure that you will not
- * deliver or disclose the source code to any third party.
- */
+package com.tuya.demo;
 
 import org.apache.commons.codec.binary.Hex;
-
 import javax.crypto.Mac;
 import javax.crypto.spec.SecretKeySpec;
 import java.security.InvalidKeyException;

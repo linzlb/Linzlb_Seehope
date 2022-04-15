@@ -2,15 +2,9 @@ package com.tuya.demo;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
-
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * @description:
- * @author: LX.LIU
- * @create: 2022/4/2 下午4:20
- */
 public class TestHttpRequest {
 
     private static final String SIGN_METHOD = "HMAC-SHA256";
