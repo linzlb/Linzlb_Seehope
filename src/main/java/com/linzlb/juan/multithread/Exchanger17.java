@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 17.java5 Exchanger
  */
-public class ExchangerTest {
+public class Exchanger17 {
     public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();
 		final Exchanger exchanger = new Exchanger();

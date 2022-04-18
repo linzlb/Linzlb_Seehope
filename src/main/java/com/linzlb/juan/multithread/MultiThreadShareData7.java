@@ -1,7 +1,9 @@
 package com.linzlb.juan.multithread;
 
-
-public class MultiThreadShareData {
+/**
+ * 7多个线程之间共享数据的方式
+ */
+public class MultiThreadShareData7 {
 
 	public static void main(String[] args) {
         ShareData1 sd = new ShareData1();

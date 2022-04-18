@@ -7,10 +7,10 @@ import java.util.Random;
 /**
  * 5.ThreadScopeShareData
  */
-public class ThreadScopeShareData {
+public class ThreadScopeShareData5 {
 
 	private static int data = 0;
-    private static Map<Thread, Integer> threadData = new HashMap<Thread, Integer>();
+    private static Map<Thread, Integer> threadData = new HashMap();
 	public static void main(String[] args) {
 		for(int i=0;i<2;i++){
 			new Thread(new Runnable(){

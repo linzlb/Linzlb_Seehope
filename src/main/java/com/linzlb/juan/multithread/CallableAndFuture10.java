@@ -12,7 +12,7 @@ import java.util.concurrent.Future;
 /**
  * 10.CallableAndFuture
  */
-public class CallableAndFuture {
+public class CallableAndFuture10 {
 
 	public static void main(String[] args) {
         //callableAndFuture();

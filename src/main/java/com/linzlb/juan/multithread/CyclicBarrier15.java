@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 15.java5的CyclicBarrier同步工具
  */
-public class CyclicBarrierTest {
+public class CyclicBarrier15 {
 
 	public static void main(String[] args) {
 		ExecutorService threadPool = Executors.newCachedThreadPool();

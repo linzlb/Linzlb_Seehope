@@ -5,7 +5,7 @@ package com.linzlb.juan.multithread;
  * @author linzlb
  * @date 20170402
  */
-public class TraditionalThread {
+public class TraditionalThread1 {
 
 	private static void newThread1(){
         Thread thread = new Thread(){
@@ -18,7 +18,7 @@ public class TraditionalThread {
 						e.printStackTrace();
 					}
 					System.out.println("1:" + Thread.currentThread().getName());
-					//System.out.println("2:" + this.getName());//this--run��������Ӧ���̶߳���
+					//System.out.println("2:" + this.getName());//this--run  this.getname
 				}
 			}
 		};
@@ -26,8 +26,6 @@ public class TraditionalThread {
 	}
 
 	private static void newThread2(){
-		//Runnable���߳���Ҫ���еĴ��������
-		//����Ҫ���еĴ����Runnable����������������ı��뷽ʽ
 		Thread thread = new Thread(new Runnable() {
 
 			@Override
@@ -95,6 +93,5 @@ public class TraditionalThread {
 //		newThread2();
 //		newThread3();
 		newThread4();
-		
 	}
 }

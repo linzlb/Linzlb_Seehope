@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 /*
 12.ReadWriteLock
  */
-public class ReadWriteLockTest {
+public class ReadWriteLock12 {
     public static void main(String[] args) {
 		test();
 	}

@@ -8,10 +8,10 @@ import java.util.concurrent.locks.ReentrantLock;
  * 11.java5
  * lock/unlock
  */
-public class LockTest {
+public class Lock11 {
 
 	public static void main(String[] args) {
-        new LockTest().init();
+        new Lock11().init();
 	}
 	
 	private void init(){

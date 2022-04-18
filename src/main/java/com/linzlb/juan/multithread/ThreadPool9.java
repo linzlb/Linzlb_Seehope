@@ -4,11 +4,11 @@ import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 
-//java5 ThreadPool
-public class ThreadPoolTest {
+//9 java5 ThreadPool
+public class ThreadPool9 {
 
 	public static void main(String[] args) {
-        ThreadPoolTest tp = new ThreadPoolTest();
+        ThreadPool9 tp = new ThreadPool9();
 		tp.threadPool();
 		tp.timer();
 	}

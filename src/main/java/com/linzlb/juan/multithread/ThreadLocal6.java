@@ -5,7 +5,7 @@ import java.util.Random;
 /**
  * 6.ThreadLocal
  */
-public class ThreadLocalTest {
+public class ThreadLocal6 {
 
 	private static ThreadLocal<Integer> x = new ThreadLocal<Integer>();
     private static ThreadLocal<MyThreadScopeData> myThreadScopeData = new ThreadLocal<MyThreadScopeData>();

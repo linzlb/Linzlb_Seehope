@@ -7,7 +7,7 @@ import java.util.concurrent.Executors;
 /**
  * 16.java5的CountDownLatch同步工具
  */
-public class CountdownLatchTest {
+public class CountdownLatch16 {
 
 	public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();

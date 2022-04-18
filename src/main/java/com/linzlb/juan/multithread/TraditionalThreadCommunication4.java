@@ -1,16 +1,15 @@
 package com.linzlb.juan.multithread;
 
 /**
- * 4.��ͳ�߳�ͬ��ͨ�ż��� wait/notify
- *
- * ���߳�ѭ��10�Σ����߳�ѭ��10�Σ����߳�ѭ��10�Σ����߳�ѭ��10�Σ����ѭ��10��
- * ���˼·��
- * 		1.���߳�ҵ��ѭ��10�Σ����߳�ҵ��ѭ��10�Σ�
- * 		2.Business������ʵ��ҵ��sub����ʵ�����߳�ҵ��main����ʵ�����߳�ҵ��
- * 		3.���ѭ��10�Σ����������ǲ������̵߳ı��subflag������Business����
- * 		4.���ѭ��10�Σ���ִ�е�ʱ��Ÿ���ѭ��
+ * 4 wait / notify
+ * 子线程循环10次，主线程循环10次，子线程循环10次，主线程循环10次，如此循环10次
+ * 设计思路：
+ * 		1.子线程业务：循环10次；主线程业务：循环10次；
+ * 		2.Business类用来实现业务，sub方法实现子线程业务，main方法实现主线程业务
+ * 		3.如此循环10次，所以做个是不是子线程的标记subflag，并对Business加锁
+ * 		4.如此循环10次，在执行的时候才给它循环
  */
-public class TraditionalThreadCommunication {
+public class TraditionalThreadCommunication4 {
 
     public static void main(String[] args) {
         final Business business = new Business();

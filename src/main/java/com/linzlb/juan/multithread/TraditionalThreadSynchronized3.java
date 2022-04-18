@@ -3,7 +3,7 @@ package com.linzlb.juan.multithread;
 /**
  * 3. synchronized
  */
-public class TraditionalThreadSynchronized {
+public class TraditionalThreadSynchronized3 {
 
 	static class Output{
         //String xxx = "";
@@ -39,7 +39,7 @@ public class TraditionalThreadSynchronized {
 	}
 
 	private void init(){
-		final Output output = new Output();//�߳���ͬһ�����󲢼������ܱ�֤ͬ��
+		final Output output = new Output();
 		new Thread(new Runnable() {
 
 			@Override
@@ -73,6 +73,6 @@ public class TraditionalThreadSynchronized {
 	}
 
 	public static void main(String[] args) {
-		new TraditionalThreadSynchronized().init();
+		new TraditionalThreadSynchronized3().init();
 	}
 }

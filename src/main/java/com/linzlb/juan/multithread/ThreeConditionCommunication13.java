@@ -7,7 +7,7 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * 13.java5 Condition
  */
-public class ThreeConditionCommunication {
+public class ThreeConditionCommunication13 {
 
     public static void main(String[] args) {
 		final Business business = new Business();

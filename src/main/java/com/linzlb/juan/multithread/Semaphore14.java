@@ -7,7 +7,7 @@ import java.util.concurrent.Semaphore;
 /**
  * 14.信号灯🚥的使用
  */
-public class SemaphoreTest {
+public class Semaphore14 {
     public static void main(String[] args) {
 		ExecutorService service = Executors.newCachedThreadPool();
 		final  Semaphore sp = new Semaphore(3);

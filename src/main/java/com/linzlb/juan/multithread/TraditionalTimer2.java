@@ -7,7 +7,7 @@ import java.util.TimerTask;
 /**
  * 2.TimerTask
  */
-public class TraditionalTimerTest {
+public class TraditionalTimer2 {
 
 	private static void testTimer(){
         TimerTask task = new TimerTask() {
@@ -18,7 +18,7 @@ public class TraditionalTimerTest {
 				
 			}
 		};
-		new Timer().schedule(task, 5000, 2000);//5000�����ʼ��ÿ��2000����һ��
+		new Timer().schedule(task, 5000, 2000);
 	}
 
 	private static void showTime(){
