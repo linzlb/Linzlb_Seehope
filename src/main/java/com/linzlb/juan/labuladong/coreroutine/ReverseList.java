@@ -34,7 +34,7 @@ public class ReverseList {
             ListNode next = curr.next;
             curr.next = prev; // 翻转箭头
             prev = curr; //三人行，即往右挪动，自己变成上一个
-            curr = prev; //三人行，下一个变成自己
+            curr = next; //三人行，下一个变成自己
         }
         return prev;
     }
@@ -75,7 +75,15 @@ public class ReverseList {
         node2.next = node3;
         node3.next = node4;
         node4.next = node5;
-        recursion(node1);
+        show(iterator(node1));
+        //show(recursion(node1));
 
+    }
+    private static ListNode show(ListNode head){
+        System.out.println(head.val);
+        if (head.next != null){
+            return show(head.next);
+        }
+        return null;
     }
 }
