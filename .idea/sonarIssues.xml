@@ -148,6 +148,111 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/labuladong/coreroutine/ReverseList.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/labuladong/entry/ListNode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/CallableAndFuture10.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ConditionCommunication13.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/CountdownLatch16.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/CyclicBarrier15.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/Exchanger17.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/MultiThreadShareData.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/MultiThreadShareData7.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ReadWriteLock12.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/Semaphore13.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/Semaphore14.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ThreadLocal6.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ThreadPool9.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ThreadScopeShareData5.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/ThreeConditionCommunication13.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/TraditionalThread1.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/TraditionalThreadCommunication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/TraditionalThreadCommunication4.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/TraditionalThreadSynchronized3.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/juan/multithread/TraditionalTimer2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/linzlb/lambda/LambdaDemo.java">
           <value>
             <set />
@@ -309,6 +414,136 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/target/test-classes/com/seehope/training/day3/quanxian1/A.class">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-application/src/main/java/com/coli688/application/controller/SpeechCallbackController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-biz/src/main/java/com/coli688/biz/service/ifly/IFlySyncReportService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-biz/src/main/java/com/coli688/biz/service/speech/SpeechSmartHomeVoiceService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-biz/src/main/java/com/coli688/biz/service/split/DeviceSplitService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-biz/src/main/java/com/coli688/biz/service/split/SpeechDeviceSplitService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-starter/src/main/resources/logback-spring-local.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../third_center_new/third-center-starter/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/src/main/java/com/tuya/angel/biz/domain/enums/infrared/InfraredMapEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/src/main/java/com/tuya/angel/biz/domain/enums/infrared/UpgradeTypeMap.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/src/main/java/com/tuya/angel/biz/domain/enums/package-info.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/src/main/java/com/tuya/angel/biz/dubbo/device/DeviceControlMService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-biz/src/main/java/com/tuya/angel/biz/infrared/InfraredBizService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-client/src/main/java/com/tuya/angel/client/iface/developer/device/IDeviceControlMService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-common/src/main/java/com/tuya/angel/exception/BizErrorCode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-linkage/linkage-biz/src/main/java/com/tuya/linkage/biz/executor/DpgIssueExecutor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-linkage/linkage-biz/src/main/java/com/tuya/linkage/biz/service/scene/action/DgIssueSceneActionStrategy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-linkage/linkage-biz/src/main/java/com/tuya/linkage/biz/service/scene/action/DpgIssueSceneActionStrategy.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-linkage/linkage-core/src/main/java/com/tuya/linkage/core/dao/normal/SceneRuleActionDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-oem/src/main/java/com/tuya/angel/oem/device/IDeviceControlGroupOemBizService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-oem/src/main/java/com/tuya/angel/oem/home/HomeOemBizService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-oem/src/main/java/com/tuya/angel/oem/home/IHomeOemBizService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/angel-service/src/main/java/com/tuya/angel/service/service/device/DeviceService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/linkage-client/src/main/java/com/tuya/linkage/client/domain/enums/SceneActionExecutorEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/linkage-client/src/main/java/com/tuya/linkage/client/domain/vo/SceneRuleActionVO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../xxxx/pom.xml">
           <value>
             <set />
           </value>
