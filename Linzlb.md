@@ -8,3 +8,12 @@ For further reference, please consider the following sections:
 * [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
 * [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
 
+
+```
+强推github
+git push github master -f
+
+强推gitlab
+git push origin master -f
+```
+
