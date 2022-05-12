@@ -16,6 +16,11 @@ For further reference, please consider the following sections:
 * [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
 * [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
 
+实用类：
+* [java1234](http://blog.java1234.com/index.html)
+* [maven](https://mvnrepository.com/)
+* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
+
 画图用的图标：
 * [iconfont](https://www.iconfont.cn/)
 
@@ -29,6 +34,8 @@ IoT资料：
 * [物模型](https://help.aliyun.com/document_detail/88239.html)
 * [数字孪生](https://help.aliyun.com/document_detail/182342.html)
 * [设备影子](https://help.aliyun.com/document_detail/53927.html)
+* [emqx doc](https://docs.emqx.com/zh/enterprise/v4.2/development/protocol.html#mqtt%E5%8D%8F%E8%AE%AE)
+* [WiFi，蓝牙，ZigBee，NB-IoT的区别](https://blog.csdn.net/wshh123456/article/details/88785761)
 
 TSDB：
 * [aliyun HiTSDB](https://help.aliyun.com/document_detail/55652.html)
@@ -37,15 +44,12 @@ OSS：
 * [aliyun OSS](https://help.aliyun.com/document_detail/177682.html?spm=a2c4g.11186623.6.620.414113c0XjO9xB)
 
 常用书签:
-* [maven](https://mvnrepository.com/)
 * [leetcode](https://leetcode-cn.com/)
-* [java1234](http://blog.java1234.com/index.html)
 * [oschina](https://www.oschina.net/)
-* [生成banner的网站](http://www.network-science.de/ascii/)
 * [homebrew](https://brew.sh/index_zh-cn)
-* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
-* [WiFi，蓝牙，ZigBee，NB-IoT的区别](https://blog.csdn.net/wshh123456/article/details/88785761)
-* [emqx doc](https://docs.emqx.com/zh/enterprise/v4.2/development/protocol.html#mqtt%E5%8D%8F%E8%AE%AE)
+* [生成banner的网站](http://www.network-science.de/ascii/)
+* [apollo原理及集成](https://blog.csdn.net/wuzhiwei549/article/details/105139608/)
+
 
 
 
