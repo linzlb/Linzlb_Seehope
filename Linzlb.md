@@ -51,6 +51,3 @@ For further reference, please consider the following sections:
 * [homebrew](https://brew.sh/index_zh-cn)
 * [生成banner的网站](http://www.network-science.de/ascii/)
 * [apollo原理及集成](https://blog.csdn.net/wuzhiwei549/article/details/105139608/)
-
-[comment]: <> (本地跳转demo：)
-[comment]: <> (1. [test]&#40;./docs/readme.md&#41;)
