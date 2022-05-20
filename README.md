@@ -1,9 +1,9 @@
-> [百度](https://www.baidu.com) 一下
+[comment]: <> (> [百度]&#40;https://www.baidu.com&#41; 一下)
 
 <div align="center">
     <p>
         <a href="https://gitee.com/allrandom/Linzlb_Seehope" target="_blank">
-            <img src="https://coli688-smart-home-pub-read.oss-cn-shenzhen.aliyuncs.com/ad/lift/family_icon_community_mall.png" width="" />
+            <img src="https://coli688-smart-home-pub-read.oss-cn-shenzhen.aliyuncs.com/icon/pid.png" width="" />
             <!-- <img src="./hanbing.png" style="margin: 0 auto; width: 850px;" /> -->
         </a>
     </p>
@@ -22,17 +22,11 @@
     </p>  
 </div>
 
-> 1. **专版1** ：1111111111
-> 2. **专版2** ：2222222222
-> 3. **专版3** ：3333333333
-
 ## Java
 ### 基础
-**知识点/面试题** : (必看:+1: )：
+**知识点/面试题** : 
 
 1. [test](./docs/readme.md)
-
-![](./media/hanbing.png)
 
 ###Linzlb
 ```
