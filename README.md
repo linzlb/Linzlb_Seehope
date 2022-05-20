@@ -28,57 +28,46 @@
 
 1. [test](./docs/readme.md)
 
-###Linzlb
-```
-强推github
-git push github master -f
+### 基础
+**知识点/面试题** : (必看:+1: )：
 
-强推gitlab
-git push origin master -f
-```
-```markdown
-For further reference, please consider the following sections:
-```
-面经：
-* [advanced](https://doocs.gitee.io/advanced-java/#/)
-* [javaguide](https://javaguide.cn/)
-* [凤凰架构](http://icyfenix.cn/)
-* [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
-* [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
+1. [Java 基础常见知识点&面试题总结(上)](docs/java/basis/java-basic-questions-01.md)
+2. [Java 基础常见知识点&面试题总结(中)](docs/java/basis/java-basic-questions-02.md)
+3. [Java 基础常见知识点&面试题总结(下)](docs/java/basis/java-basic-questions-03.md)
 
-实用类：
-* [java1234](http://blog.java1234.com/index.html)
-* [maven](https://mvnrepository.com/)
-* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
+**重要知识点详解** ：
 
-画图用的图标：
-* [iconfont](https://www.iconfont.cn/)
+* [为什么 Java 中只有值传递？](docs/java/basis/why-there-only-value-passing-in-java.md)
+* [Java 序列化详解](docs/java/basis/serialization.md)
+* [反射机制详解](docs/java/basis/reflection.md)
+* [Java 代理模式详解](docs/java/basis/proxy.md)
+* [IO 模型详解](docs/java/basis/io.md)
+* [BigDecimal 详解](docs/java/basis/bigdecimal.md)
 
-语音业务资料：
-* [小度智能音箱开发参考](https://www.cnblogs.com/qinlongqiang/p/12498788.html)
-* [dueros](https://dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-smart-home/smart-home-skill/intro-smart-skill_markdown)
-* [speech](https://www.duiopen.com/docs/smarthome_overview)
-* [讯飞](https://aiui.xfyun.cn/doc/aiui/)
+### 集合
 
-IoT资料：
-* [物模型](https://help.aliyun.com/document_detail/88239.html)
-* [数字孪生](https://help.aliyun.com/document_detail/182342.html)
-* [设备影子](https://help.aliyun.com/document_detail/53927.html)
-* [emqx doc](https://docs.emqx.com/zh/enterprise/v4.2/development/protocol.html#mqtt%E5%8D%8F%E8%AE%AE)
-* [WiFi，蓝牙，ZigBee，NB-IoT的区别](https://blog.csdn.net/wshh123456/article/details/88785761)
+**知识点/面试题** ：
 
-TSDB：
-* [aliyun HiTSDB](https://help.aliyun.com/document_detail/55652.html)
+1. [Java 集合常见知识点&面试题总结(上)](docs/java/collection/java-collection-questions-01.md) (必看 :+1:)
+2. [Java 集合常见知识点&面试题总结(下)](docs/java/collection/java-collection-questions-02.md) (必看 :+1:)
+3. [Java 容器使用注意事项总结](docs/java/collection/java-collection-precautions-for-use.md)
 
-OSS：
-* [aliyun OSS](https://help.aliyun.com/document_detail/177682.html?spm=a2c4g.11186623.6.620.414113c0XjO9xB)
+**源码分析** ：
 
-常用书签:
-* [leetcode](https://leetcode-cn.com/)
-* [oschina](https://www.oschina.net/)
-* [homebrew](https://brew.sh/index_zh-cn)
-* [生成banner的网站](http://www.network-science.de/ascii/)
-* [apollo原理及集成](https://blog.csdn.net/wuzhiwei549/article/details/105139608/)
+* [ArrayList 源码+扩容机制分析](docs/java/collection/arraylist-source-code.md)
+* [HashMap(JDK1.8)源码+底层数据结构分析](docs/java/collection/hashmap-source-code.md)
+* [ConcurrentHashMap 源码+底层数据结构分析](docs/java/collection/concurrent-hash-map-source-code.md)
+
+
+
+
+
+
+
+
+
+
+
 
 
 
