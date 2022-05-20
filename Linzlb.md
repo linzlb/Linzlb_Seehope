@@ -1,4 +1,4 @@
-###Linzlb
+###Linzlb_Seehope
 ```
 强推github
 git push github master -f
@@ -9,17 +9,9 @@ git push origin master -f
 ```markdown
 For further reference, please consider the following sections:
 ```
-面经：
-* [advanced](https://doocs.gitee.io/advanced-java/#/)
-* [javaguide](https://javaguide.cn/)
-* [凤凰架构](http://icyfenix.cn/)
-* [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
-* [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
 
-实用类：
-* [java1234](http://blog.java1234.com/index.html)
-* [maven](https://mvnrepository.com/)
-* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
+：
+
 
 画图用的图标：
 * [iconfont](https://www.iconfont.cn/)
@@ -49,3 +41,6 @@ OSS：
 * [homebrew](https://brew.sh/index_zh-cn)
 * [生成banner的网站](http://www.network-science.de/ascii/)
 * [apollo原理及集成](https://blog.csdn.net/wuzhiwei549/article/details/105139608/)
+
+本地跳转test：
+1. [test](./docs/readme.md)

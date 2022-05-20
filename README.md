@@ -22,18 +22,20 @@
     </p>  
 </div>
 
-## Java
-### 基础
-**知识点/面试题** : 
+## 参考资料
+### 面经
+**参考网站** : 
+* [advanced](https://doocs.gitee.io/advanced-java/#/)
+* [javaguide](https://javaguide.cn/)
+* [凤凰架构](http://icyfenix.cn/)
+* [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
+* [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
 
-1. [test](./docs/readme.md)
-
-### 基础
-**知识点/面试题** : (必看:+1: )：
-
-1. [Java 基础常见知识点&面试题总结(上)](docs/java/basis/java-basic-questions-01.md)
-2. [Java 基础常见知识点&面试题总结(中)](docs/java/basis/java-basic-questions-02.md)
-3. [Java 基础常见知识点&面试题总结(下)](docs/java/basis/java-basic-questions-03.md)
+### 实用类
+**参考网站** :
+* [java1234](http://blog.java1234.com/index.html)
+* [maven](https://mvnrepository.com/)
+* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
 
 **重要知识点详解** ：
 
