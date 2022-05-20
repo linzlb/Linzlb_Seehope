@@ -1,3 +1,39 @@
+> [百度](https://www.baidu.com) 一下
+
+<div align="center">
+    <p>
+        <a href="https://gitee.com/allrandom/Linzlb_Seehope" target="_blank">
+            <img src="https://coli688-smart-home-pub-read.oss-cn-shenzhen.aliyuncs.com/ad/lift/family_icon_community_mall.png" width="" />
+            <!-- <img src="./hanbing.png" style="margin: 0 auto; width: 850px;" /> -->
+        </a>
+    </p>
+<!-- 
+    <p>
+        <a href="https://javaguide.cn/">
+        <img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>
+        <img src="https://img.shields.io/github/stars/Snailclimb/JavaGuide" alt="stars" />
+        <img src="https://img.shields.io/github/forks/Snailclimb/JavaGuide" alt="forks" />
+        <img src="https://img.shields.io/github/issues/Snailclimb/JavaGuide" alt="issues" />
+    </p>
+-->
+    <p>
+        <a href="https://github.com/linzlb/Linzlb_Seehope.git">Github</a> |
+        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">Gitee</a>
+    </p>  
+</div>
+
+> 1. **专版1** ：1111111111
+> 2. **专版2** ：2222222222
+> 3. **专版3** ：3333333333
+
+## Java
+### 基础
+**知识点/面试题** : (必看:+1: )：
+
+1. [test](./docs/readme.md)
+
+![](./media/hanbing.png)
+
 ###Linzlb
 ```
 强推github
