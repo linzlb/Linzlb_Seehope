@@ -31,7 +31,7 @@
 * [5 markdown语法](./docs/readme.md)
 
 ### 1 基础
-* [0 基础](./docs/1/0.md)
+* [0 基础](./docs/1/0基础.md)
 
 ### 2 中间件
 * [1 redis](./docs/2/1.md)
