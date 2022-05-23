@@ -37,5 +37,8 @@
 * [1 redis](./docs/2/1redis.md) DOING...
 
 ### 3 分布式
+
+* [3 SpringCloud](./docs/3/3SpringCloud.md)
+* [4 高可用](./docs/3/4高可用.md)
 * [5 dockerAndK8s](./docs/3/5dockerAndK8s.md)
 * [6 DDD](./docs/3/6DDD.md)
