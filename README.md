@@ -37,4 +37,5 @@
 * [1 redis](./docs/2/1redis.md)
 
 ### 3 分布式
-* [1 基础](./docs/3/1.md)
+* [5 dockerAndK8s](./docs/3/5dockerAndK8s.md)
+* [6 DDD](./docs/3/6DDD.md)
