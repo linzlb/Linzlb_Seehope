@@ -34,7 +34,7 @@
 * [0 基础](./docs/1/0基础.md)
 
 ### 2 中间件
-* [1 redis](./docs/2/1redis.md)
+* [1 redis](./docs/2/1redis.md) DOING...
 
 ### 3 分布式
 * [5 dockerAndK8s](./docs/3/5dockerAndK8s.md)
