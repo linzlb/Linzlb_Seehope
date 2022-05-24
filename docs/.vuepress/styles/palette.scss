@@ -1,0 +1,7 @@
+$theme-color: #2980B9;
+$sidebar-width: 20rem;
+$sidebar-mobile-width: 16rem;
+
+.page .theme-default-content:not(.custom){
+    max-width: none;
+}

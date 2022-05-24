@@ -3,8 +3,10 @@ import { defineUserConfig } from 'vuepress'
 export default defineUserConfig({
 
   port: "8080",
-  title: 'Linzlb_Seehpe',
+  title: 'Linzlb_Jiangwan',
   description: 'Linzlb学习&面经_笔记',
+  //指定 vuepress build 的输出目录
+  dest: "./dist",
   locales: {
         "/": {
           lang: "zh-CN"
