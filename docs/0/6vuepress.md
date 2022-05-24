@@ -47,6 +47,13 @@ echo '# Hello VuePress' > docs/README.md
 ```shell
 npm run dev
 ```
+```text
+关闭进程：
+Ctrl + Z 会占用端口
+    lsof -i tcp:8080 查看PID
+    kill -9 PID
+Ctrl + C 不会占用端口
+```
 结果：
 ```text
 vite v2.9.9 dev server running at:
