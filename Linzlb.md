@@ -31,6 +31,7 @@ For further reference, please consider the following sections:
 * [dueros](https://dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-smart-home/smart-home-skill/intro-smart-skill_markdown)
 * [speech](https://www.duiopen.com/docs/smarthome_overview)
 * [讯飞](https://aiui.xfyun.cn/doc/aiui/)
+* [讯飞错误码描述](https://shimo.im/sheet/w3yUy39uNKs0J7DT)
 
 ### IoT资料：
 * [物模型](https://help.aliyun.com/document_detail/88239.html)
