@@ -25,23 +25,23 @@
 # 卷！
 ## 开发常用知识点～
 ### 0 coding
-* [1 设计模式](../docs/0/1设计模式.md)
-* [2 代码整洁之道](../docs/0/2代码整洁之道.md)
-* [3 认证授权](../docs/0/3认证授权.md)  
-* [4 密码学](../docs/0/4密码学.md)  
-* [5 markdown语法](../docs/readme.md)
+* [1 设计模式](./0/1设计模式.md)
+* [2 代码整洁之道](./0/2代码整洁之道.md)
+* [3 认证授权](./0/3认证授权.md)  
+* [4 密码学](./0/4密码学.md)  
+* [5 markdown语法](./readme.md)
 
 ## 面经～
 ### 1 基础
-* [0 基础](../docs/1/0基础.md)
-* [1 集合](../docs/1/1集合.md)
+* [0 基础](./1/0基础.md)
+* [1 集合](./1/1集合.md)
 
 ### 2 中间件
-* [1 redis](../docs/2/1redis.md) DOING...
+* [1 redis](./2/1redis.md) DOING...
 
 ### 3 分布式
 
-* [3 SpringCloud](../docs/3/3SpringCloud.md)
-* [4 高可用](../docs/3/4高可用.md)
-* [5 dockerAndK8s](../docs/3/5dockerAndK8s.md)
-* [6 DDD](../docs/3/6DDD.md)
+* [3 SpringCloud](./3/3SpringCloud.md)
+* [4 高可用](./3/4高可用.md)
+* [5 dockerAndK8s](./3/5dockerAndK8s.md)
+* [6 DDD](./3/6DDD.md)
