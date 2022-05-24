@@ -80,7 +80,7 @@ __
 图片optional title是图片的标题，当鼠标悬置于图片上时显示的内容。title可加可不加~
 ```
 <div align="center">
-    <img src="./../picture/Ashe.png" width="10%">
+    <img src="../../picture/Ashe.png" width="10%">
 </div>
 
 ![](../../picture/Ashe.png)
