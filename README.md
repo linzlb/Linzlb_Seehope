@@ -1,47 +1,55 @@
-<div align="center">
-<!-- 
-    <p>
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope" target="_blank">
-            <img src="https://coli688-smart-home-pub-read.oss-cn-shenzhen.aliyuncs.com/icon/pid.png" width="" />
-            <img src="./hanbing.png" style="margin: 0 auto; width: 850px;" /> 
-        </a>
-    </p>
--->
-    <p>
-        <a href="https://github.com/linzlb/Linzlb_Seehope.git">Github</a> |
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">Gitee</a>
-    </p>  
-    <p>
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">
-        <img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>
-        <img src="https://img.shields.io/github/stars/Snailclimb/JavaGuide" alt="stars" />
-        <img src="https://img.shields.io/github/forks/Snailclimb/JavaGuide" alt="forks" />
-        <img src="https://img.shields.io/github/issues/Snailclimb/JavaGuide" alt="issues" />
-    </p>
-</div>
+###Linzlb_Seehope
+```
+强推github
+git push github master -f
 
----
+强推gitlab
+git push origin master -f
+```
+```markdown
+For further reference, please consider the following sections:
+```
 
-# 卷！
-## 开发常用知识点～
-### 0 coding
-* [1 设计模式](./docs/0/1设计模式.md)
-* [2 代码整洁之道](./docs/0/2代码整洁之道.md)
-* [3 认证授权](./docs/0/3认证授权.md)  
-* [4 密码学](./docs/0/4密码学.md)  
-* [5 markdown语法](./docs/readme.md)
+## 参考资料
+### 面经
+* [advanced](https://doocs.gitee.io/advanced-java/#/)
+* [javaguide](https://javaguide.cn/)
+* [凤凰架构](http://icyfenix.cn/)
+* [JavaFamily](https://gitee.com/sharehappy/JavaFamily)
+* [我们一起去大厂](https://aobing.blog.csdn.net/category_9424379.html)
 
-## 面经～
-### 1 基础
-* [0 基础](./docs/1/0基础.md)
-* [1 集合](./docs/1/1集合.md)
+### 实用类
+* [java1234](http://blog.java1234.com/index.html)
+* [maven](https://mvnrepository.com/)
+* [docker使用](https://www.runoob.com/docker/docker-container-usage.html)
+* [vuepress](https://v2.vuepress.vuejs.org/zh/)
 
-### 2 中间件
-* [1 redis](./docs/2/1redis.md) DOING...
+### 画图用的图标：
+* [iconfont](https://www.iconfont.cn/)
 
-### 3 分布式
+### 语音业务资料：
+* [小度智能音箱开发参考](https://www.cnblogs.com/qinlongqiang/p/12498788.html)
+* [dueros](https://dueros.baidu.com/didp/doc/dueros-bot-platform/dbp-smart-home/smart-home-skill/intro-smart-skill_markdown)
+* [speech](https://www.duiopen.com/docs/smarthome_overview)
+* [讯飞](https://aiui.xfyun.cn/doc/aiui/)
+* [讯飞错误码描述](https://shimo.im/sheet/w3yUy39uNKs0J7DT)
 
-* [3 SpringCloud](./docs/3/3SpringCloud.md)
-* [4 高可用](./docs/3/4高可用.md)
-* [5 dockerAndK8s](./docs/3/5dockerAndK8s.md)
-* [6 DDD](./docs/3/6DDD.md)
+### IoT资料：
+* [物模型](https://help.aliyun.com/document_detail/88239.html)
+* [数字孪生](https://help.aliyun.com/document_detail/182342.html)
+* [设备影子](https://help.aliyun.com/document_detail/53927.html)
+* [emqx doc](https://docs.emqx.com/zh/enterprise/v4.2/development/protocol.html#mqtt%E5%8D%8F%E8%AE%AE)
+* [WiFi，蓝牙，ZigBee，NB-IoT的区别](https://blog.csdn.net/wshh123456/article/details/88785761)
+
+### TSDB：
+* [aliyun HiTSDB](https://help.aliyun.com/document_detail/55652.html)
+
+### OSS：
+* [aliyun OSS](https://help.aliyun.com/document_detail/177682.html?spm=a2c4g.11186623.6.620.414113c0XjO9xB)
+
+### 常用书签:
+* [leetcode](https://leetcode-cn.com/)
+* [oschina](https://www.oschina.net/)
+* [homebrew](https://brew.sh/index_zh-cn)
+* [生成banner的网站](http://www.network-science.de/ascii/)
+* [apollo原理及集成](https://blog.csdn.net/wuzhiwei549/article/details/105139608/)

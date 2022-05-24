@@ -1,0 +1,26 @@
+{
+  "name": "linzlb_seehope",
+  "version": "2.0.0-alpha.40",
+  "private": true,
+  "description": "Linzlb_Seehope",
+  "license": "MIT",
+  "author": "linzlb",
+  "scripts": {
+    "dev": "vuepress dev docs",
+    "build": "vuepress build docs"
+  },
+  "devDependencies": {
+    "@vuepress/plugin-search": "^2.0.0-beta.38",
+    "vuepress": "^2.0.0-beta.45",
+    "vuepress-theme-hope": "^2.0.0-beta.36",
+    "vuepress-vite": "2.0.0-beta.38",
+    "vuepress-webpack": "2.0.0-beta.38"
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitee.com/allrandom/Linzlb_Seehope.git"
+  }
+}

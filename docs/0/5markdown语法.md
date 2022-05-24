@@ -83,7 +83,7 @@ __
     <img src="./../picture/Ashe.png" width="10%">
 </div>
 
-![](./../picture/Ashe.png)
+![](../../picture/Ashe.png)
 
 ### 7 插入列表
 #### （1） 无序列表
