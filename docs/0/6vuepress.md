@@ -45,7 +45,7 @@ echo '# Hello VuePress' > docs/README.md
 
 + 步骤7: 在本地启动服务器来开发你的文档网站
 ```shell
-npm run docs:dev
+npm run dev
 ```
 结果：
 ```text
