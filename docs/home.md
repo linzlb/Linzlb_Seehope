@@ -19,9 +19,9 @@ title: Linzlb_Java学习笔记
     <p>
         <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">
         <img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>
-        <img src="https://img.shields.io/github/stars/Snailclimb/JavaGuide" alt="stars" />
-        <img src="https://img.shields.io/github/forks/Snailclimb/JavaGuide" alt="forks" />
-        <img src="https://img.shields.io/github/issues/Snailclimb/JavaGuide" alt="issues" />
+        <img src="https://img.shields.io/github/stars/linzlb/Linzlb_Seehope" alt="stars" />
+        <img src="https://img.shields.io/github/forks/linzlb/Linzlb_Seehope" alt="forks" />
+        <img src="https://img.shields.io/github/issues/linzlb/Linzlb_Seehope" alt="issues" />
     </p>
 </div>
 
