@@ -1,4 +1,4 @@
-* [返回主页](../README.md)
+* [返回主页](../home.md)
 # markdown语法
 ### 1 标题
 ```text
@@ -124,6 +124,7 @@ title可加可不加
 | zebra stripes | are neat      |    $1 |
 
 
+下面的在vuepress中才能显示，属于vuepress扩展
 ### 10 自定义容器(custom containers)
 ::: tip 提醒
 This is a tip
@@ -149,4 +150,4 @@ export default {
 ```
 
 
-* [返回主页](../README.md)
+* [返回主页](../home.md)
