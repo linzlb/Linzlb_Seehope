@@ -116,4 +116,37 @@ title可加可不加
 [我的简书主页](https://www.jianshu.com/u/aaf8afe551a4 "浅羡")
 ```
 
+### 9 表格
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
+
+### 10 自定义容器(custom containers)
+::: tip 提醒
+This is a tip
+:::
+
+::: warning 警告
+This is a warning
+:::
+
+::: danger 🈲️
+This is a dangerous warning
+:::
+
+### 11 在代码块中高亮显示行(line highlighting in code blocks)
+``` js{4}
+export default {
+  data () {
+    return {
+      msg: 'Highlighted!'
+    }
+  }
+}
+```
+
+
 * [返回主页](../README.md)

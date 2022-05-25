@@ -1,5 +1,6 @@
 import { defineUserConfig } from 'vuepress'
 
+// 配置vuepress的基本文件
 export default defineUserConfig({
 
   port: "8080",
