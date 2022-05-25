@@ -17,11 +17,11 @@ actions:
 actionText: Get Started →
 actionLink: /guide/
 features:
-- title: 日常使用
+- title: 1.日常使用
   details: coding常用技术
-- title: 基础+中间件
+- title: 2.基础+中间件
   details: 面经主体内容
-- title: 分布式
+- title: 3.分布式
   details: 架构相关内容
-footer: MIT Licensed | Copyright © 2022-linzlb JiangWan
+footer: MIT Licensed | Copyright © 2022- linzlb JiangWan
 ---
