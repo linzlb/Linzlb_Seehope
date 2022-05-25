@@ -31,22 +31,7 @@ public class VersionUtil {
         return 0;
     }
 
-    /**
-     * 比较升级策略优先级
-     * @param s1 策略1
-     * @param s2 策略2
-     * @return s1优先返回1，s2优先返回-1
-     */
-    public static int compareStrategy(Integer s1, Integer s2){
-        if (s1 == 3)
-            return 1;
-        if (s2 == 3)
-            return -1;
-        return 0;
-    }
-
     public static void main(String[] args) {
-        //System.out.println(compareVersion("1.2.1", "1.3.1"));
-        System.out.println(compareStrategy(1, 1));
+        System.out.println(compareVersion("1.2.5.4", "1.3.1"));
     }
 }
