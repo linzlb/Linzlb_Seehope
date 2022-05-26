@@ -36,7 +36,7 @@ title: Linzlb_Java学习笔记
 * [2 并发](./1/2并发.md)
 * [3 JVM](./1/3JVM.md)
 ### 2 中间件
-* [1 redis](./2/1redis.md) DOING...
+* [1 redis](./2/1redis.md)
 
 ### 3 分布式
 * [3 SpringCloud](./3/3SpringCloud.md)
