@@ -10,16 +10,18 @@ Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
 类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题)。
 类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶。
 ```
+```text
 # 一级标题
 ## 二级标题
 ### 三级标题
 #### 四级标题
 ##### 五级标题
 ###### 六级标题
+```
 分割线的三种表示方法：
 *** 
 --- 
-__
+___
 
 
 ### 2 换行
@@ -129,7 +131,7 @@ title可加可不加
 
 
 下面的在vuepress中才能显示，属于vuepress扩展
-### 10 自定义容器(custom containers)
+### 10 自定义容器
 ::: tip 提醒
 This is a tip
 :::
@@ -142,7 +144,7 @@ This is a warning
 This is a dangerous warning
 :::
 
-### 11 在代码块中高亮显示行(line highlighting in code blocks)
+### 11 在代码块中高亮显示行
 ``` js{4}
 export default {
   data () {

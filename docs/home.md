@@ -4,16 +4,9 @@ title: Linzlb_Java学习笔记
 ---
 
 <div align="center">
-<!-- 
     <p>
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope" target="_blank">
-            <img src="https://coli688-smart-home-pub-read.oss-cn-shenzhen.aliyuncs.com/icon/pid.png" width="" />
-            <img src="./hanbing.png" style="margin: 0 auto; width: 850px;" /> 
-        </a>
-    </p>
--->
-    <p>
-        <a href="https://github.com/linzlb/Linzlb_Seehope.git" target="_blank">Github</a> |
+        <a href="https://github.com/linzlb/Linzlb_Seehope.git" target="_blank">Github</a> 
+        |
         <a href="https://gitee.com/allrandom/Linzlb_Seehope.git" target="_blank">Gitee</a>
     </p>  
     <p>
@@ -26,7 +19,7 @@ title: Linzlb_Java学习笔记
 </div>
 
 # Jiangwanの学习笔记
-## Coding常用知识～
+## Coding常用～
 ### 1 coding
 * [0 常用书签](./0/0常用书签.md)
 * [1 设计模式](./0/1设计模式.md)
