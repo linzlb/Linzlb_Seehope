@@ -1,3 +1,7 @@
+---
+prev: 4密码学
+next: 6vuepress
+---
 * [返回主页](../home.md)
 # markdown语法
 ### 1 标题

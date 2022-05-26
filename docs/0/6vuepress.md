@@ -1,5 +1,9 @@
+---
+prev: 5markdown语法
+next: false
+---
 * [返回主页](../home.md)
-# 快速上手
+# vuepress快速上手
 ### 1 依赖环境
 
 * [nodejs](https://nodejs.org/en/)
