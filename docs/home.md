@@ -34,7 +34,7 @@ title: Linzlb_Java学习笔记
 * [0 基础](./1/0基础.md)
 * [1 集合](./1/1集合.md)
 * [2 并发](./1/2并发.md)
-
+* [3 JVM](./1/3JVM.md)
 ### 2 中间件
 * [1 redis](./2/1redis.md) DOING...
 
