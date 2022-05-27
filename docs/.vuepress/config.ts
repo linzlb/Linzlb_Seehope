@@ -5,7 +5,7 @@ import themeConfig from "./themeConfig";
 export default defineUserConfig({
 
   port: "8080",
-  title: 'Linzlb_Jiangwan',
+  title: 'AllRandomのNote',
   description: 'Linzlb学习&面经_笔记',
   //指定 vuepress build 的输出目录
   dest: "./dist",

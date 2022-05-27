@@ -4,7 +4,7 @@ icon: home
 title: 主页
 heroImage: /logo.png
 heroText: Linzlb
-tagline: 「Linzlb_Java学习笔记」Coding常用 + 中级/高级/资深/架构师面经整理！
+tagline: 「蒋琬の学习笔记」Coding常用内容整理 + IOT/商业银行业务整理 + 中级/高级/资深/架构师面经整理!!!
 
 actions:
 - text: 开始阅读
@@ -13,15 +13,13 @@ actions:
 - text: vuepress介绍
   link: /0/6vuepress.md
   type: default
-
-actionText: Get Started →
-actionLink: /guide/
+  
 features:
 - title: 1.日常使用
   details: coding常用技术
-- title: 2.基础+中间件
+- title: 2.基础+中间件+分布式
   details: 面经主体内容
-- title: 3.分布式
-  details: 架构相关内容
-footer: MIT Licensed | Copyright © 2022- linzlb JiangWan
+- title: 3.业务
+  details: IOT/金融相关业务内容
+footer: MIT Licensed | Copyright © 2022-AllRandom Jiangwan Linzlb
 ---

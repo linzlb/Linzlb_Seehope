@@ -1,6 +1,6 @@
 ---
 icon: creative
-title: Linzlb_Java学习笔记
+title: 学习/工作_笔记
 ---
 
 <div align="center">
@@ -18,7 +18,7 @@ title: Linzlb_Java学习笔记
     </p>
 </div>
 
-# Jiangwanの学习笔记
+# Jiangwanの笔记
 ## Coding常用～
 ### 1 coding
 * [0 常用书签](./0/0常用书签.md)
@@ -45,4 +45,4 @@ title: Linzlb_Java学习笔记
 * [6 DDD](./3/6DDD.md)
 
 ### 4 业务笔记
-* [1 商业银行一级会计科目](./4/1acsubject.md)商业银行会计分录
+* [1 商业银行一级会计科目](./4/1acsubject.md)
