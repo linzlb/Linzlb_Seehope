@@ -21,6 +21,6 @@ export default defineUserConfig<DefaultThemeOptions>({
   // 是否开启默认预加载 js
   shouldPrefetch: (file, type) => false,
   themeConfig : {
-    logo: 'https://vuejs.org/images/logo.png',
+    logo: '/logo.png',
   },
 })
