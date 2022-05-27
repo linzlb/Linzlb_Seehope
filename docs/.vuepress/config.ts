@@ -11,7 +11,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   dest: "./dist",
   //浏览器页签左上角logo
   head: [
-      ['link', { rel: 'icon', href: `/logo.png` }]
+      ['link', { rel: 'icon', href: `/favicon.ico` }]
     ],
   locales: {
         "/": {
