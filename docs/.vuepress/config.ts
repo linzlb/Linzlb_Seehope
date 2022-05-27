@@ -1,8 +1,8 @@
 import { defineUserConfig } from 'vuepress'
-import themeConfig from "./themeConfig";
+import type { DefaultThemeOptions } from 'vuepress'
 
 // 配置vuepress的基本文件
-export default defineUserConfig({
+export default defineUserConfig<DefaultThemeOptions>({
 
   port: "8080",
   title: 'AllRandomのNote',
@@ -21,6 +21,6 @@ export default defineUserConfig({
   // 是否开启默认预加载 js
   shouldPrefetch: (file, type) => false,
   themeConfig : {
-
+    logo: 'https://vuejs.org/images/logo.png',
   },
 })
