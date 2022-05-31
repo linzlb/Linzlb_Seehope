@@ -1,3 +1,8 @@
+---
+prev: 6vuepress
+next: false
+---
+
 ## docker&k8s常用命令
 ### 查看容器进程信息
 ```shell
