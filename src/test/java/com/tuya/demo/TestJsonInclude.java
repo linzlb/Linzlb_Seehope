@@ -6,7 +6,6 @@ import com.alibaba.fastjson.annotation.JSONField;
 import com.alibaba.fastjson.serializer.SerializerFeature;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
@@ -27,7 +26,6 @@ public class TestJsonInclude {
         //结论：找不到了
         try {
             RestTemplate restTemplate = new RestTemplate();
-            HttpHeaders headers = new HttpHeaders();
             String url = "http://smarthome-api-dev.coli688.com/idueros/third-center/callback";
             String req = "{\n" +
                     "    \"header\":{\n" +
