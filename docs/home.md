@@ -29,6 +29,7 @@ title: 学习/工作_笔记
 * [5 markdown语法](./0/5markdown语法.md)
 * [6 vuepress](./0/6vuepress.md)
 * [7 dockerAndK8s常用命令](./0/7dockerAndK8s常用命令.md)
+* [8 UML](./0/8UML.md)
 
 ## 码农的自我修养～
 ### 1 基础
