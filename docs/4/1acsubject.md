@@ -1,5 +1,10 @@
+---
+prev: false
+next: 2账务组织和账户信息
+---
+
 * [返回主页](../home.md)
-## 会计科目
+# 会计科目
 <style> table th:first-of-type { width: 100px; } </style>
 |科目代码|科目描述| 科目类型<br>(C:控制类,S:记账类 )| 余额方向<br>(debit借,credit贷)|
 |:-----:|:-----|:-----:|:-----:|
