@@ -8,7 +8,7 @@ next: 2接口注册zk
 fastjson是由alibaba开源的一套json处理器。
 
 ### 采坑实例
-Map中有10条记录，然后使用JSON.toJSONString 包装后进行网络传递，但是通过调试发现接收方只收到了5条数据。
+Map中有10条记录，然后使用JSON.toJSONString 包装后进行网络传递，但是通过日志发现接收方只收到了5条数据。
 
 ### JSON.toJSONString 源码分析
 ![](../../picture/5/1fastjson.png)
@@ -27,6 +27,9 @@ Map中有10条记录，然后使用JSON.toJSONString 包装后进行网络传递
 
 ### 解决方法
 指定序列化方式：<br>
+```java
 JSON.toJSONString(map, SerializerFeature.WriteMapNullValue)
+```
+实际上是拿到10条了，只是日志打印5条；
 
 * [返回主页](../home.md)
