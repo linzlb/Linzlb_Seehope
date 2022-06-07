@@ -1,6 +1,6 @@
 ---
 prev: 5操作系统
-next: false
+next: 7MySql
 ---
 * [返回主页](../home.md)
 # 6Spring

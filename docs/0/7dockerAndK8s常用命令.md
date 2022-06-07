@@ -3,6 +3,7 @@ prev: 6vuepress
 next: 8UML
 ---
 
+* [返回主页](../home.md)
 ## docker&k8s常用命令
 ### 查看容器进程信息
 ```shell
@@ -46,3 +47,4 @@ kubectl -n xxx delete po xxxx
 kubectl -n xxx logs -f xxxx
 kubectl -n xxx logs -f --tail=1000 xxxx
 ```
+* [返回主页](../home.md)

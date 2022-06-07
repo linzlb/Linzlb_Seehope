@@ -40,6 +40,7 @@ title: 学习/工作_笔记
 * [4 网络](./1/4网络.md)
 * [5 操作系统](./1/5操作系统.md)
 * [6 Spring](./1/6Spring.md)
+* [7 MySql](./1/7MySql.md)
 
 ### 2 中间件
 * [1 redis](./2/1redis.md)
