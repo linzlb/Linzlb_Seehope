@@ -11,6 +11,17 @@ next: 7dockerAndK8s常用命令
 使用 pnpm 时，你可能需要安装 vue 和 @vuepress/client 作为 peer-dependencies ，
 即 pnpm add -D vue @vuepress/client@next 。
 ```
+如果有yum源，可以直接安装
+
+```shell
+yum -y install nodejs
+yum install npm
+yum install git
+git clone -b master https://***.git
+git pull
+```
+
+
 ### 2手动安装
 + 步骤1: 创建并进入一个新目录
 ```shell
@@ -54,6 +65,7 @@ npm run dev
 ```text
 关闭进程：
 Ctrl + Z 会占用端口
+    如果没安装lsof则：yum install lsof
     lsof -i tcp:8080 查看PID
     kill -9 PID
 Ctrl + C 不会占用端口
