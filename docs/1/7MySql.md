@@ -1,6 +1,6 @@
 ---
 prev: 6Spring
-next: false
+next: 8SpringBoot
 ---
 * [返回主页](../home.md)
 # 7MySql
