@@ -3,20 +3,33 @@ icon: creative
 title: 学习/工作_笔记
 ---
 
-<div align="center">
-    <p>
-        <a href="https://github.com/linzlb/Linzlb_Seehope.git" target="_blank">Github</a> 
-        |
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git" target="_blank">Gitee</a>
-    </p>  
-    <p>
-        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">
-        <img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>
-        <img src="https://img.shields.io/github/stars/linzlb/Linzlb_Seehope" alt="stars" />
-        <img src="https://img.shields.io/github/forks/linzlb/Linzlb_Seehope" alt="forks" />
-        <img src="https://img.shields.io/github/issues/linzlb/Linzlb_Seehope" alt="issues" />
-    </p>
-</div>
+[comment]: <> (<div align="center">)
+
+[comment]: <> (    <p>)
+
+[comment]: <> (        <a href="https://github.com/linzlb/Linzlb_Seehope.git" target="_blank">Github</a> )
+
+[comment]: <> (        |)
+
+[comment]: <> (        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git" target="_blank">Gitee</a>)
+
+[comment]: <> (    </p>  )
+
+[comment]: <> (    <p>)
+
+[comment]: <> (        <a href="https://gitee.com/allrandom/Linzlb_Seehope.git">)
+
+[comment]: <> (        <img src="https://img.shields.io/badge/阅读-read-brightgreen.svg" alt="阅读" /></a>)
+
+[comment]: <> (        <img src="https://img.shields.io/github/stars/linzlb/Linzlb_Seehope" alt="stars" />)
+
+[comment]: <> (        <img src="https://img.shields.io/github/forks/linzlb/Linzlb_Seehope" alt="forks" />)
+
+[comment]: <> (        <img src="https://img.shields.io/github/issues/linzlb/Linzlb_Seehope" alt="issues" />)
+
+[comment]: <> (    </p>)
+
+[comment]: <> (</div>)
 
 # Jiangwanの笔记
 ## Coding常用～
