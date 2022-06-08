@@ -100,7 +100,24 @@ select * from usertest where name like 'a%' and age = 10;
 
 
 ### 事务日志
-![](../../picture/1/7事务日志.png)
+#### redo log重做日志
+![](../../picture/1/7redolog重做日志.png)
+
+#### undo log回滚日志
+![](../../picture/1/7undolog.png)
+
+#### MVCC
+![](../../picture/1/7MVCC.png)
+
+#### 二阶段提交
+![](../../picture/1/7二阶段提交.png)
 
 
+
+
+## 事务
+
+## 优化
+
+## 读写分离&分库分表
 * [返回主页](../home.md)
