@@ -4,7 +4,7 @@ import type { DefaultThemeOptions } from 'vuepress'
 // 配置vuepress的基本文件
 export default defineUserConfig<DefaultThemeOptions>({
 
-  port: "80",
+  port: "8080",
   title: 'AllRandomのNote',
   description: 'Linzlb学习&面经_笔记',
   //指定 vuepress build 的输出目录
