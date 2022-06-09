@@ -43,6 +43,7 @@ title: 学习/工作_笔记
 * [6 vuepress](./0/6vuepress.md)
 * [7 dockerAndK8s常用命令](./0/7dockerAndK8s常用命令.md)
 * [8 UML](./0/8UML.md)
+* [9 数据结构](./0/9数据结构.md)
 
 ## 码农的自我修养～
 ### 1 基础
