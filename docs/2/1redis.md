@@ -10,6 +10,11 @@
 * 高并发
 
 ### 数据结构
+#### C语言字符串
+![](../../picture/2/1Cstr.png)
+#### SDS结构
+![](../../picture/2/1sds.png)
+
 + string <br/>
     + 场景
         + session
