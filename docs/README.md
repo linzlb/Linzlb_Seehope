@@ -4,7 +4,7 @@ icon: home
 title: 主页
 heroImage: /logo.png
 heroText: Linzlb
-tagline: 「蒋琬の学习笔记」Coding常用内容整理 + IOT/商业银行业务整理 + 中级/高级/资深/架构师面经整理!!!
+tagline: 「蒋琬の学习笔记」Coding常用内容整理 + IOT/商业银行业务整理 + 中级/高级/资深/架构师面经突击内容整理!!!
 
 actions:
 - text: 开始阅读
