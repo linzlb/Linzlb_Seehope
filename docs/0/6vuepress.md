@@ -4,6 +4,9 @@ next: 7dockerAndK8s常用命令
 ---
 * [返回主页](../home.md)
 # vuepress快速上手
+### 0 参考资料
+* [vuepress v2.x](https://v2.vuepress.vuejs.org/zh/)
+
 ### 1 依赖环境
 
 * [nodejs](https://nodejs.org/en/)
