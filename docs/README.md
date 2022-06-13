@@ -16,10 +16,10 @@ actions:
   
 features:
 - title: 1.日常使用
-  details: coding常用技术
+  details: coding常用内容
 - title: 2.基础+中间件+分布式
-  details: 面经主体内容
+  details: 面经突击内容
 - title: 3.业务
-  details: IOT/金融相关业务内容
-footer: MIT Licensed | Copyright © 2022-AllRandom Jiangwan Linzlb
+  details: IOT/金融行业业务内容
+footer: MIT Licensed | Copyright © 2022-AllRandom Linzlb
 ---
