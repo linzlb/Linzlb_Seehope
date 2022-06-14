@@ -1,6 +1,6 @@
 ---
 prev: 4财务框架
-next: false
+next: 6数据权限优化
 ---
 
 * [返回主页](../home.md)
