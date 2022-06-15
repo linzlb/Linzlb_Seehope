@@ -82,4 +82,8 @@ vite v2.9.9 dev server running at:
   > Network:  http://2.0.2.174:8080/
 ```
 
++ 将启动命令放到后台执行
+```shell
+nohup npm run dev > docs.log 2>&1 &
+```
 * [返回主页](../home.md)
