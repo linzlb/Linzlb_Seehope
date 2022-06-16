@@ -65,6 +65,10 @@ title: 学习/工作_笔记
 ### 2 中间件
 * [1 redis](./2/1redis.md)
 
+[comment]: <> (* [2 MQ]&#40;./2/2MQ.md&#41;)
+
+[comment]: <> (* [3 kafka]&#40;./2/3kafka.md&#41;)
+
 ### 3 分布式
 * [3 SpringCloud](./3/3SpringCloud.md)
 * [4 高可用](./3/4高可用.md)
