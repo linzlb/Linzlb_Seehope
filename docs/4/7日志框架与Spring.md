@@ -1,6 +1,6 @@
 ---
 prev: 6数据权限优化
-next: false
+next: 8分布式Id生成方案
 ---
 * [返回主页](../home.md)
 # 日志框架与Spring
