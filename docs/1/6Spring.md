@@ -18,6 +18,8 @@ next: 7MySql
 
 ### AOP
 ![](../../picture/1/6AOP.png)
+#### AOP原理
+![](../../picture/1/6AOP2.png)
 
 ## Bean
 ![](../../picture/1/6Springbean.png)
