@@ -22,5 +22,5 @@ features:
 - title: 3.业务
   details: IOT/金融行业业务内容
   
-footer: MIT Licensed | Copyright © 2022-ICP备2022XXXXXX号-1 -> https://beian.miit.gov.cn/
+footer: MIT Licensed | Copyright © ICP备2022XXXXXX号-1 | 工业和信息化部政务服务平台 https://beian.miit.gov.cn/
 ---
