@@ -65,7 +65,7 @@ title: 学习/工作_笔记
 ### 2 中间件
 * [1 redis](./2/1redis.md)
 
-[comment]: <> (* [2 MQ]&#40;./2/2MQ.md&#41;)
+  [comment]: <> (* [2 MQ]&#40;./2/2MQ.md&#41;)
 
 * [3 kafka](./2/3kafka.md)
 
@@ -74,6 +74,7 @@ title: 学习/工作_笔记
 * [4 高可用](./3/4高可用.md)
 * [5 dockerAndK8s](./3/5dockerAndK8s.md)
 * [6 DDD](./3/6DDD.md)
+* [8 分布式事务](./3/8分布式事务.md)
 
 ### 4 业务笔记|通用方案
 * [1 商业银行一级会计科目](./4/1acsubject.md)
