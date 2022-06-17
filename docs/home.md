@@ -67,7 +67,7 @@ title: 学习/工作_笔记
 
 [comment]: <> (* [2 MQ]&#40;./2/2MQ.md&#41;)
 
-[comment]: <> (* [3 kafka]&#40;./2/3kafka.md&#41;)
+* [3 kafka](./2/3kafka.md)
 
 ### 3 分布式
 * [3 SpringCloud](./3/3SpringCloud.md)
