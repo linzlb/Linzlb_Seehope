@@ -86,4 +86,20 @@ vite v2.9.9 dev server running at:
 ```shell
 nohup npm run dev > docs.log 2>&1 &
 ```
+
+
++ node版本不够报错的时候
+```shell
+node -v  #查看当前版本
+
+whereis node #查看node地址
+node: /usr/bin/node /usr/local/bin/node /usr/share/node /usr/share/man/man1/node.1.gz
+
+# 找到用来安装指定版本的n命令
+cd /usr/local/bin/
+ls
+chardetect  cloud-id  cloud-init  cloud-init-per  corepack  jsonschema  n  node  npm  npx
+
+./n v18.4.0  #安装指定版本
+```
 * [返回主页](../home.md)
