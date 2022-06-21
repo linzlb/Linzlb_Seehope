@@ -17,10 +17,10 @@ actions:
 features:
 - title: 1.日常使用
   details: coding常用内容
-- title: 2.基础+中间件+分布式
-  details: 面经突击内容
+- title: 2.面经突击内容
+  details: 基础 + 中间件 + 分布式
 - title: 3.业务
-  details: IOT/金融行业业务内容
+  details: IOT&金融行业の业务内容
   
-footer: MIT Licensed | Copyright © ICP备2022XXXXXX号-1 | 工业和信息化部政务服务平台 https://beian.miit.gov.cn/
+footer: MIT Licensed | ICP备2022XXXXXX号-1 | Copyright © Linzlb
 ---
