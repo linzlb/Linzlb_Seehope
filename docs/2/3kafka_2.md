@@ -1,10 +1,10 @@
 ---
-prev: 2MQ
+prev: 3kafka_1
 next: false
 ---
 
 * [返回主页](../home.md)
-# kafka
+# kafka入门
 ## 定义
 Kafka是最初由Linkedin公司开发，是一个分布式、分区的、多副本的、多订阅者，基于zookeeper协调的分布式日志系统（也可以当做MQ系统），
 常见可以用于web/nginx日志、访问日志，消息服务等等，Linkedin于2010年贡献给了Apache基金会并成为顶级开源项目。
@@ -61,7 +61,8 @@ kafka官方不建议使用这个配置，建议使用副本机制和操作系统
 ```text
 1）Producer ：消息生产者，就是向 kafka broker 发消息的客户端；
 2）Consumer ：消息消费者，向 kafka broker 取消息的客户端；
-3）Consumer Group （CG）：消费者组，可以提高并发，由多个 consumer 组成。消费者组内每个消费者负责消费不同分区的数据，一个分区只能由一个组内消费者消费；消费者组之间互不影响。所有的消费者都属于某个消费者组，即消费者组是逻辑上的一个订阅者。 
+3）Consumer Group （CG）：消费者组，可以提高并发，由多个 consumer 组成。消费者组内每个消费者负责消费不同分区的数据，一个分区只能由一个组内消费者消费；
+   消费者组之间互不影响。所有的消费者都属于某个消费者组，即消费者组是逻辑上的一个订阅者。 
 4）zookeeper：存储Kafka集群信息，存储消费者的消费位置信息（0.9版本之前）。0.9版本之后为什么修改，是因为一致维护与zookeeper链接耗费性能
 5）Broker ：一台 kafka 服务器就是一个 broker。一个集群由多个 broker 组成。一个 broker可以容纳多个topic。 
 6）Topic ：每条发布到Kafka集群的消息都有一个类别，可以理解为一个队列，生产者和消费者面向的都是一个 topic； 
@@ -69,12 +70,16 @@ kafka官方不建议使用这个配置，建议使用副本机制和操作系统
 8）Offset：
     生产者Offset：消息写入的时候，每一个分区都有一个offset，这个offset就是生产者的offset，同时也是这个分区的最新最大的offset。
     消费者Offset：消费者把每个分区最后读取的消息偏移量保存在Zookeeper 或Kafka上，如果消费者关闭或重启，它的读取状态不会丢失。
-9）Replica：副本，为保证集群中的某个节点发生故障时，该节点上的 partition 数据不丢失，且 kafka 仍然能够继续工作，kafka 提供了副本机制，一个 topic 的每个分区都有若干个副本，一个 leader 和若干个 follower。 
+9）Replica：副本，为保证集群中的某个节点发生故障时，该节点上的 partition 数据不丢失，且 kafka 仍然能够继续工作，kafka 提供了副本机制，
+   一个 topic 的每个分区都有若干个副本，一个 leader 和若干个 follower。 
 10）leader：每个分区多个副本的“主”，生产者发送数据的对象，以及消费者消费数据的对象都是 leader。 
 11）follower：每个分区多个副本中的“从”，实时从 leader 中同步数据，保持和 leader 数据的同步。leader 发生故障时，某个 follower 会成为新的 follower。 
 12）AR：分区中的所有副本统称为AR（Assigned Repllicas）。AR=ISR+OSR。
-13）ISR：所有与leader副本保持一定程度同步的副本（包括Leader）组成ISR（In-Sync Replicas），ISR集合是AR集合中的一个子集。消息会先发送到leader副本，然后follower副本才能从leader副本中拉取消息进行同步，同步期间内follower副本相对于leader副本而言会有一定程度的滞后。前面所说的“一定程度”是指可以忍受的滞后围，这个范围可以通过参数进行配置。
-14）OSR：与leader副本同步滞后过多的副本（不包括leader）副本，组成OSR(Out-Sync Relipcas)。在正常情况下，所有的follower副本都应该与leader副本保持一定程度的同步，即AR=ISR,OSR集合为空。
+13）ISR：所有与leader副本保持一定程度同步的副本（包括Leader）组成ISR（In-Sync Replicas），ISR集合是AR集合中的一个子集。消息会先发送到leader副本，
+    然后follower副本才能从leader副本中拉取消息进行同步，同步期间内follower副本相对于leader副本而言会有一定程度的滞后。
+    前面所说的“一定程度”是指可以忍受的滞后围，这个范围可以通过参数进行配置。
+14）OSR：与leader副本同步滞后过多的副本（不包括leader）副本，组成OSR(Out-Sync Relipcas)。在正常情况下，
+    所有的follower副本都应该与leader副本保持一定程度的同步，即AR=ISR,OSR集合为空。
 15）HW：HW是High Watermak的缩写， 俗称高水位，它表示了一个特定消息的偏移量（offset），消费之只能拉取到这个offset之前的消息。
 16）LEO：LEO是Log End Offset的缩写，它表示了当前日志文件中下一条待写入消息的offset。
 ```
@@ -177,18 +182,30 @@ LEO：它表示了当前日志文件中下一条待写入消息的offset；
 HW：它表示了一个特定消息的偏移量（offset），消费者只能拉取到这个offset之前的消息。
 
 1、follower 故障
-follower 发生故障后会被临时踢出 ISR，待该 follower 恢复后，follower 会读取本地磁盘记录的上次的 HW，并将 log 文件高于 HW 的部分截取掉，从 HW 开始向 leader 进行同步。等该 follower 的 LEO 大于等于该 Partition 的 HW，即 follower 追上 leader 之后，就可以重新加入 ISR 了。
+follower 发生故障后会被临时踢出 ISR，待该 follower 恢复后，follower 会读取本地磁盘记录的上次的 HW，并将 log 文件高于 HW 的部分截取掉，
+从 HW 开始向 leader 进行同步。等该 follower 的 LEO 大于等于该 Partition 的 HW，即 follower 追上 leader 之后，就可以重新加入 ISR 了。
 2、leader 故障
-leader 发生故障之后，会从 ISR 中选出一个新的 leader，之后，为保证多个副本之间的数据一致性，其余的follower 会先将各自的 log 文件高于 HW 的部分截掉，然后从新的 leader同步数据。
+leader 发生故障之后，会从 ISR 中选出一个新的 leader，之后，为保证多个副本之间的数据一致性，其余的follower 会先将各自的 log 文件高于 HW 的部分截掉，
+然后从新的 leader同步数据。
 
 注意：这只能保证副本之间的数据一致性，并不能保证数据不丢失或者不重复。
 ```
 
 ### 7.Kafka保证数据不重复机制
 ```text
-将服务器的 ACK 级别设置为-1，可以保证 Producer 到 Server 之间不会丢失数据，即 At Least Once 语义。相对的，将服务器 ACK 级别设置为 0，可以保证生产者每条消息只会被发送一次，即 At Most Once 语义。At Least Once 可以保证数据不丢失，但是不能保证数据不重复；相对的，At Least Once可以保证数据不重复，但是不能保证数据不丢失。但是，对于一些非常重要的信息，比如说交易数据，下游数据消费者要求数据既不重复也不丢失，即 Exactly Once 语义。在 0.11 版本以前的 Kafka，对此是无能为力的，只能保证数据不丢失，再在下游消费者对数据做全局去重。对于多个下游应用的情况，每个都需要单独做全局去重，这就对性能造成了很大影响。0.11 版本的 Kafka，引入了一项重大特性：幂等性。所谓的幂等性就是指 Producer 不论向 Server 发送多少次重复数据，Server 端都只会持久化一条。幂等性结合 At Least Once 语义，就构成了 Kafka 的 Exactly Once 语义。即：
+将服务器的 ACK 级别设置为-1，可以保证 Producer 到 Server 之间不会丢失数据，即 At Least Once 语义。相对的，将服务器 ACK 级别设置为 0，
+可以保证生产者每条消息只会被发送一次，即 At Most Once 语义。At Least Once 可以保证数据不丢失，但是不能保证数据不重复；
+相对的，At Least Once可以保证数据不重复，但是不能保证数据不丢失。但是，对于一些非常重要的信息，比如说交易数据，
+下游数据消费者要求数据既不重复也不丢失，即 Exactly Once 语义。在 0.11 版本以前的 Kafka，对此是无能为力的，只能保证数据不丢失，
+再在下游消费者对数据做全局去重。对于多个下游应用的情况，每个都需要单独做全局去重，这就对性能造成了很大影响。
+
+0.11 版本的 Kafka，引入了一项重大特性：幂等性。所谓的幂等性就是指 Producer 不论向 Server 发送多少次重复数据，Server 端都只会持久化一条。
+幂等性结合 At Least Once 语义，就构成了 Kafka 的 Exactly Once 语义。即：
 At Least Once + 幂等性 = Exactly Once
-要启用幂等性，只需要将 Producer 的参数中 enable.idompotence 设置为 true 即可。Kafka的幂等性实现其实就是将原来下游需要做的去重放在了数据上游。开启幂等性的 Producer 在初始化的时候会被分配一个 PID，发往同一 Partition 的消息会附带 SequenceNumber（序列化号）。而Broker 端会对<PID, Partition, SequenceNumber>做缓存，当具有相同主键的消息提交时，Broker 只会持久化一条。但是 PID 重启就会变化，同时不同的 Partition 也具有不同主键，所以幂等性无法保证跨分区跨会话的 Exactly Once。
+要启用幂等性，只需要将 Producer 的参数中 enable.idompotence 设置为 true 即可。Kafka的幂等性实现其实就是将原来下游需要做的去重放在了数据上游。
+开启幂等性的 Producer 在初始化的时候会被分配一个 PID，发往同一 Partition 的消息会附带 SequenceNumber（序列化号）。
+而Broker 端会对<PID, Partition, SequenceNumber>做缓存，当具有相同主键的消息提交时，Broker 只会持久化一条。
+但是 PID 重启就会变化，同时不同的 Partition 也具有不同主键，所以幂等性无法保证跨分区跨会话的 Exactly Once。
 
 ProducerID：在每个新的Producer初始化时，会被分配一个唯一的ProducerID，这个ProducerID对客户端使用者是不可见的。
 SequenceNumber：对于每个ProducerID，Producer发送数据的每个Topic和Partition都对应一个从0开始单调递增的SequenceNumber值。
@@ -197,11 +214,15 @@ SequenceNumber：对于每个ProducerID，Producer发送数据的每个Topic和P
 
 ### 8.offset维护
 ```text
-由于 consumer 在消费过程中可能会出现断电宕机等故障，consumer 恢复后，需要从故障前的位置的继续消费，所以 consumer 需要实时记录自己消费到了哪个 offset，以便故障恢复后继续消费。
+由于 consumer 在消费过程中可能会出现断电宕机等故障，consumer 恢复后，需要从故障前的位置的继续消费，
+所以 consumer 需要实时记录自己消费到了哪个 offset，以便故障恢复后继续消费。
 Kafka 0.9 版本之前，consumer 默认将 offset 保存在 Zookeeper 中，从 0.9 版本开始，
 consumer 默认将 offset 保存在 Kafka 一个内置的 topic 中，该 topic 为__consumer_offsets。 
-zookeeper：老版本的位移offset是提交到zookeeper中的，目录结构是 ：/consumers/<group.id>/offsets/ / ，但是由于 ZOOKEEPER 的写入能力并不会随着 ZOOKEEPER 节点数量的增加而扩大，因而，当存在频繁的 Offset 更新时，ZOOKEEPER 集群本身可能成为瓶颈。因而，不推荐采用这种方式。
-KAFKA 自身的一个特殊 Topic（__consumer_offsets）中：这种方式支持大吞吐量的Offset 更新，又不需要手动编写 Offset 管理程序或者维护一套额外的集群，因而是迄今为止最为理想的一种实现方式。
+zookeeper：老版本的位移offset是提交到zookeeper中的，目录结构是 ：/consumers/<group.id>/offsets/ / ，
+但是由于 ZOOKEEPER 的写入能力并不会随着 ZOOKEEPER 节点数量的增加而扩大，因而，当存在频繁的 Offset 更新时，
+ZOOKEEPER 集群本身可能成为瓶颈。因而，不推荐采用这种方式。
+KAFKA 自身的一个特殊 Topic（__consumer_offsets）中：这种方式支持大吞吐量的Offset 更新，
+又不需要手动编写 Offset 管理程序或者维护一套额外的集群，因而是迄今为止最为理想的一种实现方式。
 他们是通过消费者组名，主题和分区决定他们的offset。
 ```
 ### 9.Kafka高效读写数据
@@ -212,9 +233,12 @@ Kafka 的 producer 生产数据，要写入到 log 文件中，写的过程是�
 
 ### 10.zookeeper在Kafka中的作用
 ```text
-Kafka利用ZK保存相应的元数据信息，包括：broker信息，Kafka集群信息，旧版消费者信息以及消费偏移量信息，主题信息，分区状态信息，分区副本分片方案信息，动态配置信息，等等。
+Kafka利用ZK保存相应的元数据信息，包括：broker信息，Kafka集群信息，旧版消费者信息以及消费偏移量信息，
+主题信息，分区状态信息，分区副本分片方案信息，动态配置信息，等等。
 Kafka 集群中有一个 broker 会被选举为 Controller，负责管理集群 broker 的上下线，所有 topic 的分区副本分配和 leader 选举等工作。
-在Kafka集群中会有一个或者多个broker，其中有一个broker会被选举为控制器（Kafka Controller），它负责管理整个集群中所有分区和副本的状态。当某个分区的leader副本出现故障时，由控制器负责为该分区选举新的leader副本。当检测到某个分区的ISR集合发生变化时，由控制器负责通知所有broker更新其元数据信息。当使用kafka-topics.sh脚本为某个topic增加分区数量时，同样还是由控制器负责分区的重新分配。
+在Kafka集群中会有一个或者多个broker，其中有一个broker会被选举为控制器（Kafka Controller），它负责管理整个集群中所有分区和副本的状态。
+当某个分区的leader副本出现故障时，由控制器负责为该分区选举新的leader副本。当检测到某个分区的ISR集合发生变化时，
+由控制器负责通知所有broker更新其元数据信息。当使用kafka-topics.sh脚本为某个topic增加分区数量时，同样还是由控制器负责分区的重新分配。
 ```
 ![img.png](../../picture/2/3zkkfk.png)
 <br>
@@ -225,7 +249,10 @@ Controller 的管理工作都是依赖于 Zookeeper 的。
 ### 11.Kafka事务
 ```text
 Kafka 从 0.11 版本开始引入了事务支持。事务可以保证 Kafka 在 Exactly Once 语义的基础上，生产和消费可以跨分区和会话，要么全部成功，要么全部失败。
-为了实现跨分区跨会话的事务，需要引入一个全局唯一的 Transaction ID，并将 Producer获得的PID Transaction ID 绑定。这样当Producer 重启后就可以通过正在进行的 Transaction ID 获得原来的 PID。为了管理Transaction，Kafka 引入了一个新的组件 Transaction Coordinator。Producer 就是通过和 Transaction Coordinator 交互获得 Transaction ID 对应的任务状态。Transaction Coordinator 还负责将事务所有写入Kafka 的一个内部 Topic，这样即使整个服务重启，由于事务状态得到保存，进行中的事务状态可以得到恢复，从而继续进行。
+为了实现跨分区跨会话的事务，需要引入一个全局唯一的 Transaction ID，并将 Producer获得的PID Transaction ID 绑定。
+这样当Producer 重启后就可以通过正在进行的 Transaction ID 获得原来的 PID。为了管理Transaction，Kafka 引入了一个新的组件 Transaction Coordinator。
+Producer 就是通过和 Transaction Coordinator 交互获得 Transaction ID 对应的任务状态。
+Transaction Coordinator 还负责将事务所有写入Kafka 的一个内部 Topic，这样即使整个服务重启，由于事务状态得到保存，进行中的事务状态可以得到恢复，从而继续进行。
 ```
 
 ## Kafka&Java API
@@ -273,7 +300,8 @@ public class CustomProducer {
 ```
 ##### 2.带回调函数的API
 ```text
-回调函数会在 producer 收到 ack？？？？？ 时调用，为异步调用，该方法有两个参数，分别是RecordMetadata 和 Exception，如果 Exception 为 null，说明消息发送成功，如果Exception 不为 null，说明消息发送失败。
+回调函数会在 producer 收到 ack？？？？？ 时调用，为异步调用，该方法有两个参数，分别是RecordMetadata 和 Exception，
+如果 Exception 为 null，说明消息发送成功，如果Exception 不为 null，说明消息发送失败。
 注意：消息发送失败会自动重试，不需要我们在回调函数中手动重试。
 ```
 ```java
@@ -348,7 +376,8 @@ public class CustomProducer {
 
 ### Consumer API
 Consumer 消费数据时的可靠性是很容易保证的，因为数据在 Kafka 中是持久化的，故不用担心数据丢失问题。
-由于 consumer 在消费过程中可能会出现断电宕机等故障，consumer 恢复后，需要从故障前的位置的继续消费，所以 consumer 需要实时记录自己消费到了哪个 offset，以便故障恢复后继续消费。所以 offset 的维护是 Consumer 消费数据是必须考虑的问题。
+由于 consumer 在消费过程中可能会出现断电宕机等故障，consumer 恢复后，需要从故障前的位置的继续消费，
+所以 consumer 需要实时记录自己消费到了哪个 offset，以便故障恢复后继续消费。所以 offset 的维护是 Consumer 消费数据是必须考虑的问题。
 #### 1.自动提交offset
 ```text
 为了使我们能够专注于自己的业务逻辑，Kafka 提供了自动提交 offset 的功能。
@@ -387,8 +416,11 @@ public class CustomConsumer {
 ```
 #### 2.手动提交offset
 ```text
-虽然自动提交 offset 十分简介便利，但由于其是基于时间提交的，很可能自动提交了，但是这时消费者挂了，导致消息丢失，开发人员难以把握offset 提交的时机。因此 Kafka 还提供了手动提交 offset 的 API。手动提交 offset 的方法有两种：分别是 commitSync（同步提交）和 commitAsync（异步提交）。两者的相同点是，都会将本次 poll 的一批数据最高的偏移量提交；不同点是，
-commitSync 阻塞当前线程，一直到提交成功，并且会自动失败重试（由不可控因素导致，也会出现提交失败）；而 commitAsync 则没有失败重试机制，故有可能提交失败。
+虽然自动提交 offset 十分简介便利，但由于其是基于时间提交的，很可能自动提交了，但是这时消费者挂了，导致消息丢失，开发人员难以把握offset 提交的时机。
+因此 Kafka 还提供了手动提交 offset 的 API。手动提交 offset 的方法有两种：分别是 commitSync（同步提交）和 commitAsync（异步提交）。
+两者的相同点是，都会将本次 poll 的一批数据最高的偏移量提交；不同点是，
+commitSync 阻塞当前线程，一直到提交成功，并且会自动失败重试（由不可控因素导致，也会出现提交失败）；
+而 commitAsync 则没有失败重试机制，故有可能提交失败。
 ```
 ##### 2.1同步提交offset
 ```java
@@ -470,19 +502,26 @@ public class CustomConsumer {
 原理：
 
 Producer 拦截器(interceptor)是在 Kafka 0.10 版本被引入的，主要用于实现 clients 端的定制化控制逻辑。
-对于 producer 而言，interceptor 使得用户在消息发送前以及 producer 回调逻辑前有机会对消息做一些定制化需求，比如修改消息等。同时，producer 允许用户指定多个 interceptor按序作用于同一条消息从而形成一个拦截链(interceptor chain)。Intercetpor 的实现接口是org.apache.kafka.clients.producer.ProducerInterceptor，其定义的方法包括：
+对于 producer 而言，interceptor 使得用户在消息发送前以及 producer 回调逻辑前有机会对消息做一些定制化需求，比如修改消息等。
+同时，producer 允许用户指定多个 interceptor按序作用于同一条消息从而形成一个拦截链(interceptor chain)。
+Intercetpor 的实现接口是org.apache.kafka.clients.producer.ProducerInterceptor，其定义的方法包括：
 1、configure(configs)
 获取配置信息和初始化数据时调用。 
 ﻿
 2、onSend(ProducerRecord)：
-该方法封装进 KafkaProducer.send 方法中，即它运行在用户主线程中。Producer 确保在消息被序列化以及计算分区前调用该方法。用户可以在该方法中对消息做任何操作，但最好保证不要修改消息所属的 topic 和分区，否则会影响目标分区的计算。 
+该方法封装进 KafkaProducer.send 方法中，即它运行在用户主线程中。Producer 确保在消息被序列化以及计算分区前调用该方法。
+用户可以在该方法中对消息做任何操作，但最好保证不要修改消息所属的 topic 和分区，否则会影响目标分区的计算。 
 ﻿
 3、onAcknowledgement(RecordMetadata, Exception)：
-该方法会在消息从 RecordAccumulator 成功发送到 Kafka Broker 之后，或者在发送过程中失败时调用。并且通常都是在 producer 回调逻辑触发之前。onAcknowledgement 运行在producer 的 IO 线程中，因此不要在该方法中放入很重的逻辑，否则会拖慢 producer 的消息发送效率。 
+该方法会在消息从 RecordAccumulator 成功发送到 Kafka Broker 之后，或者在发送过程中失败时调用。
+并且通常都是在 producer 回调逻辑触发之前。onAcknowledgement 运行在producer 的 IO 线程中，
+因此不要在该方法中放入很重的逻辑，否则会拖慢 producer 的消息发送效率。 
 ﻿
 4、close：
 关闭 interceptor，主要用于执行一些资源清理工作
-如前所述，interceptor 可能被运行在多个线程中，因此在具体实现时用户需要自行确保线程安全。另外倘若指定了多个 interceptor，则 producer 将按照指定顺序调用它们，并仅仅是捕获每个 interceptor 可能抛出的异常记录到错误日志中而非在向上传递。这在使用过程中要特别留意。
+如前所述，interceptor 可能被运行在多个线程中，因此在具体实现时用户需要自行确保线程安全。
+另外倘若指定了多个 interceptor，则 producer 将按照指定顺序调用它们，
+并仅仅是捕获每个 interceptor 可能抛出的异常记录到错误日志中而非在向上传递。这在使用过程中要特别留意。
 ```
 
 ## 面经原理知识点
@@ -494,12 +533,17 @@ Producer 拦截器(interceptor)是在 Kafka 0.10 版本被引入的，主要用�
 
 ### Controller选举机制
 ```text
-在kafka集群启动的时候，会自动选举一台broker作为controller来管理整个集群，选举的过程是集群中每个broker都会 尝试在zookeeper上创建一个 /controller 临时节点，zookeeper会保证有且仅有一个broker能创建成功，这个broker 就会成为集群的总控器controller。 
-当这个controller角色的broker宕机了，此时zookeeper临时节点会消失，集群里其他broker会一直监听这个临时节 点，发现临时节点消失了，就竞争再次创建临时节点，zookeeper又会保证有一个broker 成为新的controller。
+在kafka集群启动的时候，会自动选举一台broker作为controller来管理整个集群，
+选举的过程是集群中每个broker都会尝试在zookeeper上创建一个 /controller 临时节点，
+zookeeper会保证有且仅有一个broker能创建成功，这个broker 就会成为集群的总控器controller。 
+当这个controller角色的broker宕机了，此时zookeeper临时节点会消失，集群里其他broker会一直监听这个临时节点，
+发现临时节点消失了，就竞争再次创建临时节点，zookeeper又会保证有一个broker 成为新的controller。
 具备控制器身份的broker需要比其他普通的broker多一份职责，具体细节如下: 
 1. 监听broker相关的变化。为Zookeeper中的/brokers/ids/节点添加BrokerChangeListener，用来处理broker 增减的变化。
-2. 监听topic相关的变化。为Zookeeper中的/brokers/topics节点添加TopicChangeListener，用来处理topic增减 的变化;为Zookeeper中的/admin/delete_topics节点添加TopicDeletionListener，用来处理删除topic的动作。 
-3. 从Zookeeper中读取获取当前所有与topic、partition以及broker有关的信息并进行相应的管理。对于所有topic 所对应的Zookeeper中的/brokers/topics/[topic]节点添加PartitionModificationsListener，用来监听topic中的 分区分配变化。
+2. 监听topic相关的变化。为Zookeeper中的/brokers/topics节点添加TopicChangeListener，用来处理topic增减 的变化;
+   为Zookeeper中的/admin/delete_topics节点添加TopicDeletionListener，用来处理删除topic的动作。 
+3. 从Zookeeper中读取获取当前所有与topic、partition以及broker有关的信息并进行相应的管理。
+   对于所有topic 所对应的Zookeeper中的/brokers/topics/[topic]节点添加PartitionModificationsListener，用来监听topic中的 分区分配变化。
 4. 更新集群的元数据信息，同步到其他普通的broker节点中。
 ```
 
@@ -520,16 +564,22 @@ Rebalance过程如下
 当有消费者加入消费组时，消费者、消费组及组协调器之间会经历以下几个阶段。
 
 第一阶段:选择组协调器
-组协调器GroupCoordinator:每个consumer group都会选择一个broker作为自己的组协调器coordinator，负责监控 这个消费组里的所有消费者的心跳，以及判断是否宕机，然后开启消费者rebalance。
-consumer group中的每个consumer启动时会向kafka集群中的某个节点发送 FindCoordinatorRequest 请求来查找对 应的组协调器GroupCoordinator，并跟其建立网络连接。
-组协调器选择方式: 通过如下公式可以选出consumer消费的offset要提交到__consumer_offsets的哪个分区，这个分区leader对应的broker 就是这个consumer group的coordinator
+组协调器GroupCoordinator:每个consumer group都会选择一个broker作为自己的组协调器coordinator，
+负责监控 这个消费组里的所有消费者的心跳，以及判断是否宕机，然后开启消费者rebalance。
+consumer group中的每个consumer启动时会向kafka集群中的某个节点发送 FindCoordinatorRequest 请求
+来查找对 应的组协调器GroupCoordinator，并跟其建立网络连接。
+组协调器选择方式: 通过如下公式可以选出consumer消费的offset要提交到__consumer_offsets的哪个分区，
+这个分区leader对应的broker 就是这个consumer group的coordinator
 公式:hash(consumer group id) % __consumer_offsets主题的分区数 
 
 第二阶段:加入消费组JOIN GROUP
-在成功找到消费组所对应的 GroupCoordinator 之后就进入加入消费组的阶段，在此阶段的消费者会向 GroupCoordinator 发送 JoinGroupRequest 请求，并处理响应。然后GroupCoordinator 从一个consumer group中 选择第一个加入group的consumer作为leader(消费组协调器)，把consumer group情况发送给这个leader，接着这个 leader会负责制定分区方案。 
+在成功找到消费组所对应的 GroupCoordinator 之后就进入加入消费组的阶段，在此阶段的消费者会向 GroupCoordinator 发送 JoinGroupRequest 请求，
+并处理响应。然后GroupCoordinator 从一个consumer group中 选择第一个加入group的consumer作为leader(消费组协调器)，
+把consumer group情况发送给这个leader，接着这个 leader会负责制定分区方案。 
 
 第三阶段( SYNC GROUP)
-consumer leader通过给GroupCoordinator发送SyncGroupRequest，接着GroupCoordinator就把分区方案下发给各 个consumer，他们会根据指定分区的leader broker进行网络连接以及消息消费。 
+consumer leader通过给GroupCoordinator发送SyncGroupRequest，接着GroupCoordinator就把分区方案下发给各 个consumer，
+他们会根据指定分区的leader broker进行网络连接以及消息消费。 
 ```
 
 ![img.png](../../picture/2/3Rebalance过程.png)

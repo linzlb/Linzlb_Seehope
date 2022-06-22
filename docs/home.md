@@ -65,7 +65,8 @@ title: 蒋琬の笔记
 ### 2 中间件
 * [1 redis](./2/1redis.md)
 * [2 MQ](./2/2MQ.md)
-* [3 kafka](./2/3kafka.md)
+* [3.1 kafka](2/3kafka_1.md)
+* [3.2 kafka入门](2/3kafka_2.md)
 
 ### 3 分布式
 * [3 SpringCloud](./3/3SpringCloud.md)
