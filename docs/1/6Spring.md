@@ -70,12 +70,11 @@ Spring中，单例bean有延迟加载和立即加载两种加载方式，其中�
 :::
 
 ### setting注入避免循环依赖的问题
-```text
-Spring容器启动后，如果我们去获取singletonA，那么容器的操作步骤大致如下：
+::: tip Spring容器启动后，如果我们去获取singletonA，那么容器的操作步骤大致如下：
 1、尝试创建bean singletonA，发现singletonA是singleton，且不是通过构造器注入依赖，那么先使用默认构造器创建一个A的实例，并保存对它的引用，并且将singletonA标记为“正在创建中的singleton”。然后发现singletonA依赖了singletonB，所以尝试创建singletonB。
-2、尝试创建bean singletonB，发现singletonB是singleton，且不是通过构造器注入依赖，那么先使用默认构造器创建一个B的实例，并保存对它的引用，并且将singletonB标记为“正在创建中的singleton”。然后发现singletonB依赖了singletonA，所以尝试创建singletonA。
-3、尝试创建singletonA，注意，这时Spring容器发现singletonA“正在创建中”，那么就不会再去创建singletonA，而是返回容器之前保存了的对singletonA的引用（首先会读取singletonObjects缓存中的实例,如果存在则直接返回。因为当我们实例化完成的时候,会通过addSingleton加入到缓存,所以Address注入User的时候不会重新加载一遍,只是从缓存中直接读取,所以不会有循环引用的问题）。
-4、容器将singletonA通过setter方法注入到singletonB，从而singletonB完成创建。
-5、容器将singletonB通过setter方法注入到singletonA，从而singletonA完成创建。
-```
+<br><br>2、尝试创建bean singletonB，发现singletonB是singleton，且不是通过构造器注入依赖，那么先使用默认构造器创建一个B的实例，并保存对它的引用，并且将singletonB标记为“正在创建中的singleton”。然后发现singletonB依赖了singletonA，所以尝试创建singletonA。
+<br><br>3、尝试创建singletonA，注意，这时Spring容器发现singletonA“正在创建中”，那么就不会再去创建singletonA，而是返回容器之前保存了的对singletonA的引用（首先会读取singletonObjects缓存中的实例,如果存在则直接返回。因为当我们实例化完成的时候,会通过addSingleton加入到缓存,所以Address注入User的时候不会重新加载一遍,只是从缓存中直接读取,所以不会有循环引用的问题）。
+<br><br>4、容器将singletonA通过setter方法注入到singletonB，从而singletonB完成创建。
+<br><br>5、容器将singletonB通过setter方法注入到singletonA，从而singletonA完成创建。
+:::
 * [返回主页](../home.md)
