@@ -67,6 +67,10 @@ title: 蒋琬の笔记
 * [2 MQ](./2/2MQ.md)
 * [3.1 kafka](2/3kafka_1.md)
 * [3.2 kafka入门](2/3kafka_2.md)
+* [4 RocketMQ](2/4RocketMQ.md) 
+* [5 zookeeper](2/5zookeeper.md)
+* [6 搜索引擎](2/6搜索引擎.md)
+* [7 TSDB](2/7TSDB.md)
 
 ### 3 分布式
 * [3 SpringCloud](./3/3SpringCloud.md)
