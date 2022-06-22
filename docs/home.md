@@ -64,9 +64,7 @@ title: 蒋琬の笔记
 
 ### 2 中间件
 * [1 redis](./2/1redis.md)
-
-  [comment]: <> (* [2 MQ]&#40;./2/2MQ.md&#41;)
-
+* [2 MQ](./2/2MQ.md)
 * [3 kafka](./2/3kafka.md)
 
 ### 3 分布式
