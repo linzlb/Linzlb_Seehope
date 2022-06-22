@@ -5,12 +5,18 @@ next: 9数据结构
 * [返回主页](../home.md)
 # UML
 ## 关系
-+ 泛化（Generalization）
-+ 实现（Realization）
-+ 关联（Association)
-+ 聚合（Aggregation）
-+ 组合(Composition)
-+ 依赖(Dependency)
+
+[comment]: <> (+ 泛化（Generalization）)
+
+[comment]: <> (+ 实现（Realization）)
+
+[comment]: <> (+ 关联（Association&#41;)
+
+[comment]: <> (+ 聚合（Aggregation）)
+
+[comment]: <> (+ 组合&#40;Composition&#41;)
+
+[comment]: <> (+ 依赖&#40;Dependency&#41;)
 
 ### 泛化（Generalization）
 >【泛化关系】：是一种继承关系，表示一般与特殊的关系，它指定了子类如何特化父类的所有特征和行为。例如：老虎是动物的一种，即有老虎的特性也有动物的共性。

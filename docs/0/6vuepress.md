@@ -36,8 +36,8 @@ cd vuepress-starter
 git init
 npm init
 ```
-+ 步骤3: 将 VuePress 安装为本地依赖
-```shell
++ 步骤3: 将 VuePress 安装为本地依赖！
+```shell{1}
 npm install -D vuepress@next
 ```
 + 步骤4: 在 package.json 中添加一些 scripts (可选)
@@ -61,8 +61,8 @@ mkdir docs
 echo '# Hello VuePress' > docs/README.md
 ```
 
-+ 步骤7: 在本地启动服务器来开发你的文档网站
-```shell
++ 步骤7: 在本地启动服务器来开发你的文档网站!
+```shell{1}
 npm run dev
 ```
 ```text

@@ -28,19 +28,20 @@ next: false
 ### stream操作类型
 ![](../../picture/0/11stream操作类型.png)
 
-## Intermediate
-```text
-一个流可以后面跟随零个或多个 intermediate(中间的) 操作。
-其目的主要是打开流，做出某种程度的数据映射/过滤，然后返回一个新的流，交给下一个操作使用。
-这类操作都是惰性化的（lazy），就是说，仅仅调用到这类方法，并没有真正开始流的遍历。 
-包含的操作有：map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered 
-
-Terminal：一个流只能有一个 terminal(终止的) 操作，当这个操作执行后，流就被使用“光”了，无法再被操作。
-所以这必定是流的最后一个操作。Terminal 操作的执行，才会真正开始流的遍历，并且会生成一个结果，或者一个 side effect。 
-包含的操作有：forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator map/flatMap 
+## Intermediate&Terminal
+::: tip Intermediate
+一个流可以后面跟随零个或多个 intermediate(中间的) 操作。<br>
+其目的主要是打开流，做出某种程度的数据映射/过滤，然后返回一个新的流，交给下一个操作使用。<br>
+这类操作都是惰性化的（lazy），就是说，仅仅调用到这类方法，并没有真正开始流的遍历。 <br>
+包含的操作有：map (mapToInt, flatMap 等)、 filter、 distinct、 sorted、 peek、 limit、 skip、 parallel、 sequential、 unordered
+:::
+::: tip Terminal
+一个流只能有一个 terminal(终止的) 操作，当这个操作执行后，流就被使用“光”了，无法再被操作。 <br>
+所以这必定是流的最后一个操作。Terminal 操作的执行，才会真正开始流的遍历，并且会生成一个结果，或者一个 side effect。  <br>
+包含的操作有：forEach、 forEachOrdered、 toArray、 reduce、 collect、 min、 max、 count、 anyMatch、 allMatch、 noneMatch、 findFirst、 findAny、 iterator map/flatMap  <br>
 操作它们的作用就是把 input Stream 的每一个元素，映射成 output Stream 的另外一个元素。
-```
-### POJO
+:::
+### demo-POJO
 ```java
 //Person 类包含年龄和姓名两个成员变量
 private String name;

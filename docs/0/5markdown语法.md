@@ -5,12 +5,14 @@ next: 6vuepress
 * [返回主页](../home.md)
 # markdown语法
 ### 1 标题
-```text
-Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
-类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题)。
-类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶。
-```
-```text
+::: tip 标题的2种写法
+Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。<br>
+类 Setext 形式是用底线的形式，利用 = （最高阶标题）和 - （第二阶标题)。<br>
+类 Atx 形式则是在行首插入 1 到 6 个 # ，对应到标题 1 到 6 阶。<br>
+:::
+
+```markdown
+类 Atx 形式写法：
 # 一级标题
 ## 二级标题
 ### 三级标题
@@ -19,6 +21,12 @@ Markdown 支持两种标题的语法，类 Setext 和类 atx 形式。
 ###### 六级标题
 ```
 分割线的三种表示方法：
+```markdown
+*** 
+--- 
+___
+```
+效果：<br>
 *** 
 --- 
 ___
@@ -47,6 +55,11 @@ ___
 ***加粗斜体***
 ~~删除~~
 ```
+效果：<br>
+**加粗**，__加粗__ <br>
+*斜体*，_斜体_ <br>
+***加粗斜体*** <br>
+~~删除~~
 #### 2、反转义符号
 ```markdown
 \\ 反斜杠
@@ -104,7 +117,7 @@ ___
 3. 列表内容
 
 #### （3）列表嵌套
-```text
+```markdown
 上一级和下一级之间敲三个空格即可。注意符号之后的空格不能少，符号之前的空格也不能少。
 ```
 + 一级目录
@@ -112,7 +125,7 @@ ___
      + 三级目录
 
 ### 8 插入超链接
-```text
+```markdown
 [超链接名](超链接地址 "超链接title")
 title可加可不加
 文字链接 [链接名称](http://链接网址)
@@ -123,6 +136,14 @@ title可加可不加
 ```
 
 ### 9 表格
+```markdown
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+```
+效果:<br>
 | Tables        | Are           | Cool  |
 | ------------- |:-------------:| -----:|
 | col 3 is      | right-aligned | $1600 |
@@ -132,6 +153,20 @@ title可加可不加
 
 下面的在vuepress中才能显示，属于vuepress扩展
 ### 10 自定义容器
+```markdown
+::: tip 提醒
+This is a tip
+:::
+
+::: warning 警告
+This is a warning
+:::
+
+::: danger 🈲️
+This is a dangerous warning
+:::
+```
+效果：<br>
 ::: tip 提醒
 This is a tip
 :::

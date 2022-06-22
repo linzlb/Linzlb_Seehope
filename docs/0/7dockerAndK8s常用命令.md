@@ -13,7 +13,7 @@ docker ps |grep xxx
 
 ### 看容器中运行的进程信息
 ```shell
-docker top angel-oem
+docker top xxx
 ```
 
 ### 查看日志
@@ -46,6 +46,6 @@ kubectl -n xxx delete po xxxx
 ### 查看日志
 ```shell
 kubectl -n xxx logs -f xxxx
-kubectl -n xxx logs -f --tail=1000 xxxx
+kubectl -n xxx logs -f --tail=100 xxxx
 ```
 * [返回主页](../home.md)
