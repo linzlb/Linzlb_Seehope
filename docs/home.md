@@ -1,6 +1,6 @@
 ---
 icon: creative
-title: 学习/工作_笔记
+title: 蒋琬の笔记
 ---
 
 [comment]: <> (<div align="center">)
@@ -31,7 +31,7 @@ title: 学习/工作_笔记
 
 [comment]: <> (</div>)
 
-# Jiangwanの笔记
+# 蒋琬の笔记
 ## Coding常用～
 [comment]: <> (### 1 Coding常用～)
 * [0 常用书签](./0/0常用书签.md)
