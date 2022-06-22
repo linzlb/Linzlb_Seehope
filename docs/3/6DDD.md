@@ -1,11 +1,11 @@
 ---
 prev: 5dockerAndK8s
-next: false
+next: 7分布式架构
 ---
 
 * [返回主页](../home.md)
 
-## DDD  
+# DDD  
 ![](../../picture/3/6DDD.png)
   
 ## 领域驱动设计之三域划分

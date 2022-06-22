@@ -73,10 +73,13 @@ title: 蒋琬の笔记
 * [7 TSDB](2/7TSDB.md)
 
 ### 3 分布式
+* [1 分布式基础](./3/1分布式基础.md)
+* [2 Dubbo](./3/2Dubbo.md)
 * [3 SpringCloud](./3/3SpringCloud.md)
 * [4 高可用](./3/4高可用.md)
 * [5 dockerAndK8s](./3/5dockerAndK8s.md)
 * [6 DDD](./3/6DDD.md)
+* [7 分布式架构](./3/7分布式架构.md)
 * [8 分布式事务](./3/8分布式事务.md)
 
 ### 4 业务笔记|通用方案
