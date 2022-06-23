@@ -104,7 +104,7 @@ chardetect  cloud-id  cloud-init  cloud-init-per  corepack  jsonschema  n  node 
 ```
 
 + 更新版本
-```text
+```shell
 ssh root@45.40.228.219
 cd /home/lighthouse/Linzlb_Seehope/
 git pull
