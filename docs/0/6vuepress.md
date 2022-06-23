@@ -102,4 +102,11 @@ chardetect  cloud-id  cloud-init  cloud-init-per  corepack  jsonschema  n  node 
 
 ./n v18.4.0  #安装指定版本
 ```
+
++ 更新版本
+```text
+ssh root@45.40.228.219
+cd /home/lighthouse/Linzlb_Seehope/
+git pull
+```
 * [返回主页](../home.md)
