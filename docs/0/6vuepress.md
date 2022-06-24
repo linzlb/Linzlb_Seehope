@@ -65,8 +65,8 @@ echo '# Hello VuePress' > docs/README.md
 ```shell{1}
 npm run dev
 ```
+关闭进程：
 ```shell
-# 关闭进程：
 # Ctrl + Z 会占用端口
 # Ctrl + C 不会占用端口
 
