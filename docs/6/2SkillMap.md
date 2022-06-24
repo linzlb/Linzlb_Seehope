@@ -1,6 +1,6 @@
 ---
 prev: 1java1970
-next: false
+next: 3TSDB使用新场景思考
 ---
 * [返回主页](../home.md)
 
