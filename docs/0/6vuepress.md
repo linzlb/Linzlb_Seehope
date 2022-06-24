@@ -65,13 +65,15 @@ echo '# Hello VuePress' > docs/README.md
 ```shell{1}
 npm run dev
 ```
-```text
-关闭进程：
-Ctrl + Z 会占用端口
-    如果没安装lsof则：yum install lsof
-    lsof -i tcp:8080 查看PID
-    kill -9 PID
-Ctrl + C 不会占用端口
+```shell
+# 关闭进程：
+# Ctrl + Z 会占用端口
+# Ctrl + C 不会占用端口
+
+# 怎么关闭已经存在的端口的进程
+# 如果没安装lsof则：yum install lsof
+lsof -i tcp:8080 # 查看PID
+kill -9 PID # 杀掉PID进程
 ```
 结果：
 ```text
