@@ -22,5 +22,5 @@ features:
 - title: 3.业务
   details: IOT&金融行业の业务内容
   
-footer: MIT Licensed | ICP备2022XXXXXX号-1 | Copyright © Linzlb
+footer: MIT Licensed | 粤ICP备2022078471号-1 | Copyright © Linzlb
 ---
