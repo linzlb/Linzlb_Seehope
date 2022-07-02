@@ -1,6 +1,6 @@
 ---
 prev: 10常见算法
-next: false
+next: 12工作流
 ---
 * [返回主页](../home.md)
 # Java8流式编程
